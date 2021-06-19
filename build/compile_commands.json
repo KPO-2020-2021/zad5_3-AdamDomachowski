@@ -1,0 +1,82 @@
+[
+{
+  "directory": "/home/adam/programowanie/zad5_3-AdamDomachowski/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/adam/programowanie/zad5_3-AdamDomachowski/build -I/home/adam/programowanie/zad5_3-AdamDomachowski/inc -I/home/adam/programowanie/zad5_3-AdamDomachowski/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/main.dir/app/main.cpp.o -c /home/adam/programowanie/zad5_3-AdamDomachowski/app/main.cpp",
+  "file": "/home/adam/programowanie/zad5_3-AdamDomachowski/app/main.cpp"
+},
+{
+  "directory": "/home/adam/programowanie/zad5_3-AdamDomachowski/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/adam/programowanie/zad5_3-AdamDomachowski/build -I/home/adam/programowanie/zad5_3-AdamDomachowski/inc -I/home/adam/programowanie/zad5_3-AdamDomachowski/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/example.cpp.o -c /home/adam/programowanie/zad5_3-AdamDomachowski/src/example.cpp",
+  "file": "/home/adam/programowanie/zad5_3-AdamDomachowski/src/example.cpp"
+},
+{
+  "directory": "/home/adam/programowanie/zad5_3-AdamDomachowski/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/adam/programowanie/zad5_3-AdamDomachowski/build -I/home/adam/programowanie/zad5_3-AdamDomachowski/inc -I/home/adam/programowanie/zad5_3-AdamDomachowski/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o -c /home/adam/programowanie/zad5_3-AdamDomachowski/src/lacze_do_gnuplota.cpp",
+  "file": "/home/adam/programowanie/zad5_3-AdamDomachowski/src/lacze_do_gnuplota.cpp"
+},
+{
+  "directory": "/home/adam/programowanie/zad5_3-AdamDomachowski/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/adam/programowanie/zad5_3-AdamDomachowski/build -I/home/adam/programowanie/zad5_3-AdamDomachowski/inc -I/home/adam/programowanie/zad5_3-AdamDomachowski/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/matrix3x3.cpp.o -c /home/adam/programowanie/zad5_3-AdamDomachowski/src/matrix3x3.cpp",
+  "file": "/home/adam/programowanie/zad5_3-AdamDomachowski/src/matrix3x3.cpp"
+},
+{
+  "directory": "/home/adam/programowanie/zad5_3-AdamDomachowski/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/adam/programowanie/zad5_3-AdamDomachowski/build -I/home/adam/programowanie/zad5_3-AdamDomachowski/inc -I/home/adam/programowanie/zad5_3-AdamDomachowski/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/cuboid.cpp.o -c /home/adam/programowanie/zad5_3-AdamDomachowski/src/cuboid.cpp",
+  "file": "/home/adam/programowanie/zad5_3-AdamDomachowski/src/cuboid.cpp"
+},
+{
+  "directory": "/home/adam/programowanie/zad5_3-AdamDomachowski/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/adam/programowanie/zad5_3-AdamDomachowski/build -I/home/adam/programowanie/zad5_3-AdamDomachowski/inc -I/home/adam/programowanie/zad5_3-AdamDomachowski/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/Solid.cpp.o -c /home/adam/programowanie/zad5_3-AdamDomachowski/src/Solid.cpp",
+  "file": "/home/adam/programowanie/zad5_3-AdamDomachowski/src/Solid.cpp"
+},
+{
+  "directory": "/home/adam/programowanie/zad5_3-AdamDomachowski/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/adam/programowanie/zad5_3-AdamDomachowski/build -I/home/adam/programowanie/zad5_3-AdamDomachowski/inc -I/home/adam/programowanie/zad5_3-AdamDomachowski/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/prism6.cpp.o -c /home/adam/programowanie/zad5_3-AdamDomachowski/src/prism6.cpp",
+  "file": "/home/adam/programowanie/zad5_3-AdamDomachowski/src/prism6.cpp"
+},
+{
+  "directory": "/home/adam/programowanie/zad5_3-AdamDomachowski/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/adam/programowanie/zad5_3-AdamDomachowski/build -I/home/adam/programowanie/zad5_3-AdamDomachowski/inc -I/home/adam/programowanie/zad5_3-AdamDomachowski/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/Drone.cpp.o -c /home/adam/programowanie/zad5_3-AdamDomachowski/src/Drone.cpp",
+  "file": "/home/adam/programowanie/zad5_3-AdamDomachowski/src/Drone.cpp"
+},
+{
+  "directory": "/home/adam/programowanie/zad5_3-AdamDomachowski/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/adam/programowanie/zad5_3-AdamDomachowski/build -I/home/adam/programowanie/zad5_3-AdamDomachowski/inc -I/home/adam/programowanie/zad5_3-AdamDomachowski/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/scena.cpp.o -c /home/adam/programowanie/zad5_3-AdamDomachowski/src/scena.cpp",
+  "file": "/home/adam/programowanie/zad5_3-AdamDomachowski/src/scena.cpp"
+},
+{
+  "directory": "/home/adam/programowanie/zad5_3-AdamDomachowski/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/adam/programowanie/zad5_3-AdamDomachowski/build -I/home/adam/programowanie/zad5_3-AdamDomachowski/inc -I/home/adam/programowanie/zad5_3-AdamDomachowski/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/bottom.cpp.o -c /home/adam/programowanie/zad5_3-AdamDomachowski/src/bottom.cpp",
+  "file": "/home/adam/programowanie/zad5_3-AdamDomachowski/src/bottom.cpp"
+},
+{
+  "directory": "/home/adam/programowanie/zad5_3-AdamDomachowski/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/adam/programowanie/zad5_3-AdamDomachowski/build -I/home/adam/programowanie/zad5_3-AdamDomachowski/inc -I/home/adam/programowanie/zad5_3-AdamDomachowski/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/plaskowyz.cpp.o -c /home/adam/programowanie/zad5_3-AdamDomachowski/src/plaskowyz.cpp",
+  "file": "/home/adam/programowanie/zad5_3-AdamDomachowski/src/plaskowyz.cpp"
+},
+{
+  "directory": "/home/adam/programowanie/zad5_3-AdamDomachowski/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/adam/programowanie/zad5_3-AdamDomachowski/build -I/home/adam/programowanie/zad5_3-AdamDomachowski/inc -I/home/adam/programowanie/zad5_3-AdamDomachowski/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/goraGran.cpp.o -c /home/adam/programowanie/zad5_3-AdamDomachowski/src/goraGran.cpp",
+  "file": "/home/adam/programowanie/zad5_3-AdamDomachowski/src/goraGran.cpp"
+},
+{
+  "directory": "/home/adam/programowanie/zad5_3-AdamDomachowski/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/adam/programowanie/zad5_3-AdamDomachowski/build -I/home/adam/programowanie/zad5_3-AdamDomachowski/inc -I/home/adam/programowanie/zad5_3-AdamDomachowski/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/goraSzczyt.cpp.o -c /home/adam/programowanie/zad5_3-AdamDomachowski/src/goraSzczyt.cpp",
+  "file": "/home/adam/programowanie/zad5_3-AdamDomachowski/src/goraSzczyt.cpp"
+},
+{
+  "directory": "/home/adam/programowanie/zad5_3-AdamDomachowski/build/tests",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/adam/programowanie/zad5_3-AdamDomachowski/build -I/home/adam/programowanie/zad5_3-AdamDomachowski/inc -I/home/adam/programowanie/zad5_3-AdamDomachowski/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/unit_tests.dir/main.cpp.o -c /home/adam/programowanie/zad5_3-AdamDomachowski/tests/main.cpp",
+  "file": "/home/adam/programowanie/zad5_3-AdamDomachowski/tests/main.cpp"
+},
+{
+  "directory": "/home/adam/programowanie/zad5_3-AdamDomachowski/build/tests",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/adam/programowanie/zad5_3-AdamDomachowski/build -I/home/adam/programowanie/zad5_3-AdamDomachowski/inc -I/home/adam/programowanie/zad5_3-AdamDomachowski/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/unit_tests.dir/tests.cpp.o -c /home/adam/programowanie/zad5_3-AdamDomachowski/tests/tests.cpp",
+  "file": "/home/adam/programowanie/zad5_3-AdamDomachowski/tests/tests.cpp"
+},
+{
+  "directory": "/home/adam/programowanie/zad5_3-AdamDomachowski/build/tests",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/adam/programowanie/zad5_3-AdamDomachowski/build -I/home/adam/programowanie/zad5_3-AdamDomachowski/inc -I/home/adam/programowanie/zad5_3-AdamDomachowski/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/unit_tests.dir/dummy.cpp.o -c /home/adam/programowanie/zad5_3-AdamDomachowski/tests/dummy.cpp",
+  "file": "/home/adam/programowanie/zad5_3-AdamDomachowski/tests/dummy.cpp"
+}
+]
