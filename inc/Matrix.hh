@@ -5,7 +5,7 @@
 #include <iostream>
 #include "size.hh"
 #include <cstdlib>
-
+using namespace std;
 /*! \brief  klasa matrix odpowiada za wszystkie dzialania na macierzach*/
 
 template <int SIZE>
@@ -26,7 +26,7 @@ public:
     Vector<SIZE> operator * (Vector<SIZE> const &tmp);           
 
      /*! \brief operator mnozenia macierzy przez macierz*/
-    Matrix<SIZE> operator * (Matrix<SIZE> const &tmp); 
+    Matrix<SIZE> operator * (Matrix<SIZE> tmp); 
 
      /*! \brief dodaje dwie macierze ze soba*/
     Matrix<SIZE> operator + (Matrix<SIZE> tmp);
@@ -139,16 +139,16 @@ Vector<SIZE> Matrix<SIZE>::operator * (Vector<SIZE> const &tmp) {
     \return  result - Iloczyn dwoch skladnikow przekazanych jako macierz.                    
 */
 template < int SIZE>
-Matrix<SIZE> Matrix<SIZE>::operator * (Matrix<SIZE> const &tmp){
+Matrix<SIZE> Matrix<SIZE>::operator * (Matrix<SIZE> tmp){
     Matrix<SIZE> result;
-    for( int i = 0; i < SIZE; ++i){
-        for( int j = 0; j < SIZE; ++j){    
-            result(i,j) = 0;
-            for( int k = 0; k < SIZE; ++k){
-                result(i,j) +=  value[i][k] * tmp(k,j);
-            }
-        }
+  for(int i = 0; i < SIZE; ++i)
+  {
+    for(int j = 0; j < SIZE; ++j)
+    {
+      result(i,j) =0;
+         for(int k = 0; k < SIZE; k++ ) result(i,j) += value [ i ][ k ] * tmp(k,j) ;
     }
+  }
     return result; 
 }
 

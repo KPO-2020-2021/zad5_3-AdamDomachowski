@@ -32,19 +32,19 @@ void wstaw_srodek(Vector3D srodek_bryly); /*! \brief ustawia wierzcholki srodka 
 
 void ustaw_nazwe_pliku(std::string nazwa_pliku_bryly); /*! \brief umozwliwia podania nazwy pliku do ktorego zapisywane beda wierzcholki*/
 
-Vector3D zczytaj_srodek() const; /*! \brief zczytuje wierzcholki srodka bryly*/
+Vector3D zczytaj_srodek_obiektu() const; /*! \brief zczytuje wierzcholki srodka bryly*/
 
-std::string jaka_nazwa() const; /*! \brief zczytuje nazwe pliku do ktorego zapisywane beda wierzcholki*/
+std::string zczytaj_nazwe_obiektu() const; /*! \brief zczytuje nazwe pliku do ktorego zapisywane beda wierzcholki*/
 
 void przesun_o_wektor(Vector3D wektor_przesuniecia); /*! \brief przesuwa bryle o zadany wektor*/
 
 void obrot(Matrix3x3 macierz_obrotu); /*! \brief obraca bryle o zadany kat*/
 
-void zapisz_do_pliku(); /*! \brief zapisuje wspolrzedne bryly do pliku*/
+void zapisz(); /*! \brief zapisuje wspolrzedne bryly do pliku*/
 
 Vector3D czytaj_wierzcholki(int ver) const;
 
-bool kolizja_info(std::shared_ptr <obiekt> object);
+bool kolizja_info(shared_ptr <obiekt> object);
 
 double promien(){return sqrt(pow(srodek_bryly[0]-wierzcholki[0][0],2) + pow(srodek_bryly[1]-wierzcholki[0][1],2)+pow(srodek_bryly[2]-wierzcholki[0][2],2));}
 };

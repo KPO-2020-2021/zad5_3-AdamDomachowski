@@ -13,6 +13,7 @@ CMakeFiles/main.dir/app/main.cpp.o: ../inc/goraGran.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/goraSzczyt.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/lacze_do_gnuplota.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/matrix3x3.hh
+CMakeFiles/main.dir/app/main.cpp.o: ../inc/obiekt.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/plaskowyz.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/prism6.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/scena.hh

@@ -114,7 +114,6 @@ tests/preinstall:
 .PHONY : tests/preinstall
 
 # Recursive "clean" directory target.
-tests/clean: tests/CMakeFiles/fulltest.dir/clean
 tests/clean: tests/CMakeFiles/coverage.dir/clean
 tests/clean: tests/CMakeFiles/unit_tests.dir/clean
 
@@ -958,33 +957,6 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 .PHONY : CMakeFiles/ContinuousSubmit.dir/clean
 
 #=============================================================================
-# Target rules for target tests/CMakeFiles/fulltest.dir
-
-# All Build rule for target.
-tests/CMakeFiles/fulltest.dir/all: tests/CMakeFiles/unit_tests.dir/all
-	$(MAKE) -f tests/CMakeFiles/fulltest.dir/build.make tests/CMakeFiles/fulltest.dir/depend
-	$(MAKE) -f tests/CMakeFiles/fulltest.dir/build.make tests/CMakeFiles/fulltest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/adam/programowanie/zad5_3-AdamDomachowski/build/CMakeFiles --progress-num= "Built target fulltest"
-.PHONY : tests/CMakeFiles/fulltest.dir/all
-
-# Build rule for subdir invocation for target.
-tests/CMakeFiles/fulltest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adam/programowanie/zad5_3-AdamDomachowski/build/CMakeFiles 16
-	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/fulltest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adam/programowanie/zad5_3-AdamDomachowski/build/CMakeFiles 0
-.PHONY : tests/CMakeFiles/fulltest.dir/rule
-
-# Convenience name for target.
-fulltest: tests/CMakeFiles/fulltest.dir/rule
-
-.PHONY : fulltest
-
-# clean rule for target.
-tests/CMakeFiles/fulltest.dir/clean:
-	$(MAKE) -f tests/CMakeFiles/fulltest.dir/build.make tests/CMakeFiles/fulltest.dir/clean
-.PHONY : tests/CMakeFiles/fulltest.dir/clean
-
-#=============================================================================
 # Target rules for target tests/CMakeFiles/coverage.dir
 
 # All Build rule for target.
@@ -1018,12 +990,12 @@ tests/CMakeFiles/coverage.dir/clean:
 tests/CMakeFiles/unit_tests.dir/all: CMakeFiles/program.dir/all
 	$(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/depend
 	$(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/adam/programowanie/zad5_3-AdamDomachowski/build/CMakeFiles --progress-num=16,17,18,19 "Built target unit_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/adam/programowanie/zad5_3-AdamDomachowski/build/CMakeFiles --progress-num=16,17,18 "Built target unit_tests"
 .PHONY : tests/CMakeFiles/unit_tests.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/unit_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adam/programowanie/zad5_3-AdamDomachowski/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adam/programowanie/zad5_3-AdamDomachowski/build/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/unit_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/adam/programowanie/zad5_3-AdamDomachowski/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/unit_tests.dir/rule

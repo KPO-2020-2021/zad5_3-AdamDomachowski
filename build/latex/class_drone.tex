@@ -1,0 +1,220 @@
+\hypertarget{class_drone}{}\doxysection{Drone Class Reference}
+\label{class_drone}\index{Drone@{Drone}}
+
+
+klasa drona przechowuje wszystkie informacje, metody, funkcje dotyczace dronow  
+
+
+
+
+{\ttfamily \#include $<$Drone.\+hh$>$}
+
+Inheritance diagram for Drone\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_drone}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_drone_a74a54940d4218b90d2b96a49dcb04ca3}{Drone}} (int nr\+\_\+drona, \mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} \&Lacze, \mbox{\hyperlink{_vector3_d_8hh_a01090a0f6a3d1e7e9606819bd0fafda0}{Vector3D}} wspolrzende)
+\begin{DoxyCompactList}\small\item\em kopia \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_drone_a9f3330dc98c1117e8bf97606206f3715}{lot\+\_\+do\+\_\+gory}} (double droga)
+\begin{DoxyCompactList}\small\item\em funkcja wizualizująca oraz wykonująca lot drona w kierunku prostopadlym do podloza \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_drone_a4ad8e08290762ae5be03fe54452074c3}{obrot}} (double kat)
+\begin{DoxyCompactList}\small\item\em funkcja odpowiedzialna za obracanie drona \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_drone_a885cb1824143e601b6313a3959296388}{obrot\+\_\+wiernikow}} ()
+\begin{DoxyCompactList}\small\item\em funkcja odpowiedzialna za symulacje obrotu wiernikow oraz ich przemieszcanie \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_drone_acea02e5ab90729749cc15e4bce0c022f}{zapisz}} ()
+\begin{DoxyCompactList}\small\item\em funkcja odpowiadająca za zapis informacji o wspolrzednych do pliku \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_drone_aa2b8eba2d2cfff6590ece7478b44aae5}{przesun}} (double dorga)
+\begin{DoxyCompactList}\small\item\em funkcja odpowiedzialna za przesuwanie drona (lot) po plaszczyznie \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_drone_aa970f773e4d9f9620c920d528bbb979d}{narysuj\+\_\+trase}} (double droga)
+\begin{DoxyCompactList}\small\item\em funkcja odpowiadająca rysowanie trajektorii lotu drona w przestrzeni \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_drone_a3ba0dbbf550ff6f6b6b7423e33f2f795}{pilot}} (std\+::list$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classobiekt}{obiekt}} $>$$>$ \&lista\+\_\+elementow)
+\begin{DoxyCompactList}\small\item\em funkcja odpowiadająca za pilotaz dronem \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_drone_af3eea5315a663549096b4a01f7f34b4c}\label{class_drone_af3eea5315a663549096b4a01f7f34b4c}} 
+int \mbox{\hyperlink{class_drone_af3eea5315a663549096b4a01f7f34b4c}{numer\+\_\+drona}} ()
+\begin{DoxyCompactList}\small\item\em zweaca numer drona \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_drone_ab324c307a4b54e45b46d393c5c704b92}\label{class_drone_ab324c307a4b54e45b46d393c5c704b92}} 
+void \mbox{\hyperlink{class_drone_ab324c307a4b54e45b46d393c5c704b92}{usun}} ()
+\begin{DoxyCompactList}\small\item\em usuwa dane o dronie \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_drone_acbeb4423e956e50ccc906111e53b9117}\label{class_drone_acbeb4423e956e50ccc906111e53b9117}} 
+\mbox{\hyperlink{_vector3_d_8hh_a01090a0f6a3d1e7e9606819bd0fafda0}{Vector3D}} {\bfseries zczytaj\+\_\+srodek\+\_\+obiektu} () const
+\item 
+\mbox{\Hypertarget{class_drone_ad291d839fe7c72590b665be26d16cfbb}\label{class_drone_ad291d839fe7c72590b665be26d16cfbb}} 
+std\+::string {\bfseries zczytaj\+\_\+nazwe\+\_\+obiektu} () const
+\item 
+\mbox{\Hypertarget{class_drone_a227c00e2788000968f26ddf6e2ef1968}\label{class_drone_a227c00e2788000968f26ddf6e2ef1968}} 
+bool {\bfseries kolizja\+\_\+info} (shared\+\_\+ptr$<$ \mbox{\hyperlink{classobiekt}{obiekt}} $>$ object)
+\item 
+\mbox{\Hypertarget{class_drone_a7f21ec90c9bb9eb525a85ff3d888dc9e}\label{class_drone_a7f21ec90c9bb9eb525a85ff3d888dc9e}} 
+double {\bfseries promien} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+klasa drona przechowuje wszystkie informacje, metody, funkcje dotyczace dronow 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_drone_a74a54940d4218b90d2b96a49dcb04ca3}\label{class_drone_a74a54940d4218b90d2b96a49dcb04ca3}} 
+\index{Drone@{Drone}!Drone@{Drone}}
+\index{Drone@{Drone}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{Drone()}{Drone()}}
+{\footnotesize\ttfamily Drone\+::\+Drone (\begin{DoxyParamCaption}\item[{int}]{nr\+\_\+drona,  }\item[{\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} \&}]{Lacze,  }\item[{\mbox{\hyperlink{_vector3_d_8hh_a01090a0f6a3d1e7e9606819bd0fafda0}{Vector3D}}}]{wspolrzende }\end{DoxyParamCaption})}
+
+
+
+kopia 
+
+konstruktor drona ~\newline
+
+
+konstruktor parametryczny
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nr\+\_\+drona} & -\/ numer drona. ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em Lacze} & -\/ gnuplot ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em wspolrzende} & -\/ poczatkowe polozenie drona. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nieobrocony dron we wskazanym punkcie. ~\newline
+ 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_drone_a9f3330dc98c1117e8bf97606206f3715}\label{class_drone_a9f3330dc98c1117e8bf97606206f3715}} 
+\index{Drone@{Drone}!lot\_do\_gory@{lot\_do\_gory}}
+\index{lot\_do\_gory@{lot\_do\_gory}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{lot\_do\_gory()}{lot\_do\_gory()}}
+{\footnotesize\ttfamily void Drone\+::lot\+\_\+do\+\_\+gory (\begin{DoxyParamCaption}\item[{double}]{droga }\end{DoxyParamCaption})}
+
+
+
+funkcja wizualizująca oraz wykonująca lot drona w kierunku prostopadlym do podloza 
+
+funkcja wizualizująca oraz wykonująca lot drona w kierunku prostopadlym do podloza ~\newline
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em droga} & -\/ droga ktora przebedzie dron. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_drone_aa970f773e4d9f9620c920d528bbb979d}\label{class_drone_aa970f773e4d9f9620c920d528bbb979d}} 
+\index{Drone@{Drone}!narysuj\_trase@{narysuj\_trase}}
+\index{narysuj\_trase@{narysuj\_trase}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{narysuj\_trase()}{narysuj\_trase()}}
+{\footnotesize\ttfamily void Drone\+::narysuj\+\_\+trase (\begin{DoxyParamCaption}\item[{double}]{droga }\end{DoxyParamCaption})}
+
+
+
+funkcja odpowiadająca rysowanie trajektorii lotu drona w przestrzeni 
+
+funkcja wizualizująca trajektorie lotu ~\newline
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em droga} & -\/ droga ktora przebedzie dron. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_drone_a4ad8e08290762ae5be03fe54452074c3}\label{class_drone_a4ad8e08290762ae5be03fe54452074c3}} 
+\index{Drone@{Drone}!obrot@{obrot}}
+\index{obrot@{obrot}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{obrot()}{obrot()}}
+{\footnotesize\ttfamily void Drone\+::obrot (\begin{DoxyParamCaption}\item[{double}]{kat }\end{DoxyParamCaption})}
+
+
+
+funkcja odpowiedzialna za obracanie drona 
+
+funkcja obrotu drona ~\newline
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em kat} & -\/ kat do obrotu. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_drone_a885cb1824143e601b6313a3959296388}\label{class_drone_a885cb1824143e601b6313a3959296388}} 
+\index{Drone@{Drone}!obrot\_wiernikow@{obrot\_wiernikow}}
+\index{obrot\_wiernikow@{obrot\_wiernikow}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{obrot\_wiernikow()}{obrot\_wiernikow()}}
+{\footnotesize\ttfamily void Drone\+::obrot\+\_\+wiernikow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+funkcja odpowiedzialna za symulacje obrotu wiernikow oraz ich przemieszcanie 
+
+funkcja odpowiedzialna za symulacje obrotu wiernikow oraz ich przemieszcanie ~\newline
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em kat} & -\/ kat do obrotu. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_drone_a3ba0dbbf550ff6f6b6b7423e33f2f795}\label{class_drone_a3ba0dbbf550ff6f6b6b7423e33f2f795}} 
+\index{Drone@{Drone}!pilot@{pilot}}
+\index{pilot@{pilot}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{pilot()}{pilot()}}
+{\footnotesize\ttfamily void Drone\+::pilot (\begin{DoxyParamCaption}\item[{std\+::list$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classobiekt}{obiekt}} $>$$>$ \&}]{lista\+\_\+elementow }\end{DoxyParamCaption})}
+
+
+
+funkcja odpowiadająca za pilotaz dronem 
+
+funkcja odpowiadająca za pilotaz dronem. \mbox{\Hypertarget{class_drone_aa2b8eba2d2cfff6590ece7478b44aae5}\label{class_drone_aa2b8eba2d2cfff6590ece7478b44aae5}} 
+\index{Drone@{Drone}!przesun@{przesun}}
+\index{przesun@{przesun}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{przesun()}{przesun()}}
+{\footnotesize\ttfamily void Drone\+::przesun (\begin{DoxyParamCaption}\item[{double}]{droga }\end{DoxyParamCaption})}
+
+
+
+funkcja odpowiedzialna za przesuwanie drona (lot) po plaszczyznie 
+
+funkcja odpowiedzialna za przesuwanie drona (lot) po plaszczyznie ~\newline
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em droga} & -\/ droga ktora przebedzie dron. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_drone_acea02e5ab90729749cc15e4bce0c022f}\label{class_drone_acea02e5ab90729749cc15e4bce0c022f}} 
+\index{Drone@{Drone}!zapisz@{zapisz}}
+\index{zapisz@{zapisz}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{zapisz()}{zapisz()}}
+{\footnotesize\ttfamily void Drone\+::zapisz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+funkcja odpowiadająca za zapis informacji o wspolrzednych do pliku 
+
+funkcja odpowiadająca za zapis informacji o wspolrzednych do pliku ~\newline
+ 
+
+Implements \mbox{\hyperlink{classobiekt}{obiekt}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/adam/programowanie/zad5\+\_\+3-\/\+Adam\+Domachowski/inc/Drone.\+hh\item 
+/home/adam/programowanie/zad5\+\_\+3-\/\+Adam\+Domachowski/src/\mbox{\hyperlink{_drone_8cpp}{Drone.\+cpp}}\end{DoxyCompactItemize}

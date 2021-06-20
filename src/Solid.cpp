@@ -13,7 +13,7 @@ void Solid::wstaw_srodek(Vector3D srodek_bryly)
 }
 
 /*! \brief zczytuje wierzcholki srodka bryly*/
-Vector3D Solid::zczytaj_srodek() const
+Vector3D Solid::zczytaj_srodek_obiektu() const
 {
     return srodek_bryly;
 }
@@ -31,7 +31,7 @@ void Solid::ustaw_nazwe_pliku(std::string nazwa_pliku_bryly)
 }
 
 /*! \brief zczytuje nazwe pliku do ktorego zapisywane beda wierzcholki*/
-std::string Solid::jaka_nazwa() const
+std::string Solid::zczytaj_nazwe_obiektu() const
 {
     return nazwa_pliku_bryly;
 }
@@ -63,13 +63,13 @@ void Solid::obrot(Matrix3x3 macierz_obrotu)
 {
     for(int i=0; i < (int)wierzcholki.size() ; i++)
     {
-        wierzcholki[i] =  macierz_obrotu * wierzcholki[i];
+        wierzcholki[i] = ( macierz_obrotu * wierzcholki[i]);
     }
     srodek_bryly = macierz_obrotu*srodek_bryly;
 } 
 
 /*! \brief zapisuje wspolrzedne bryly do pliku*/
-void Solid::zapisz_do_pliku()
+void Solid::zapisz()
 {
     std::fstream plik;
     double tab[]={0,0,(*wymiary)[2]/2};
@@ -102,7 +102,7 @@ bool Solid::kolizja_info(std::shared_ptr <obiekt> object)
     if (object != self)
     {
 
-        Vector3D srodek_Bryla= zczytaj_srodek();
+        Vector3D srodek_Bryla= zczytaj_srodek_obiektu();
         Vector3D srodek_Obiektu = object->zczytaj_srodek_obiektu();
         double l = sqrt(pow(srodek_Bryla[0] - srodek_Obiektu[0], 2) + pow(srodek_Bryla[1] - srodek_Obiektu[1], 2) + pow(srodek_Bryla[2] - srodek_Obiektu[2], 2));
         if (promien() + object->promien() >= l)

@@ -1,0 +1,167 @@
+\hypertarget{class_solid}{}\doxysection{Solid Class Reference}
+\label{class_solid}\index{Solid@{Solid}}
+
+
+klasa matka dla wszystkich innych klas które sa zwiazane z brylami geometrycznymi  
+
+
+
+
+{\ttfamily \#include $<$Solid.\+hh$>$}
+
+Inheritance diagram for Solid\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.423729cm]{class_solid}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_vector3_d_8hh_a01090a0f6a3d1e7e9606819bd0fafda0}{Vector3D}} \& \mbox{\hyperlink{class_solid_a43a797013fb1109e1507f85642d8dedf}{operator\mbox{[}$\,$\mbox{]}}} (int index)
+\begin{DoxyCompactList}\small\item\em przechowuje nazwe pliku do którego zapisywane beda wierzcholki \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_solid_ab4bead5332c87604502090768805dde2}\label{class_solid_ab4bead5332c87604502090768805dde2}} 
+\mbox{\hyperlink{_vector3_d_8hh_a01090a0f6a3d1e7e9606819bd0fafda0}{Vector3D}} \mbox{\hyperlink{class_solid_ab4bead5332c87604502090768805dde2}{operator\mbox{[}$\,$\mbox{]}}} (int index) const
+\begin{DoxyCompactList}\small\item\em operator indeksujacy \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_solid_abf4b05fc118f4d2bfdb6795244636c6a}\label{class_solid_abf4b05fc118f4d2bfdb6795244636c6a}} 
+void \mbox{\hyperlink{class_solid_abf4b05fc118f4d2bfdb6795244636c6a}{wstaw\+\_\+srodek}} (\mbox{\hyperlink{_vector3_d_8hh_a01090a0f6a3d1e7e9606819bd0fafda0}{Vector3D}} \mbox{\hyperlink{class_solid_a670f611d4e6e6444b0b05d5a495ffe16}{srodek\+\_\+bryly}})
+\begin{DoxyCompactList}\small\item\em ustawia wierzcholki srodka bryly \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_solid_a7adccb70a171af7c4f0298c8b1073d68}{ustaw\+\_\+nazwe\+\_\+pliku}} (std\+::string \mbox{\hyperlink{class_solid_a615623c2de6dbfcfb487631f6d647910}{nazwa\+\_\+pliku\+\_\+bryly}})
+\begin{DoxyCompactList}\small\item\em ustawia wierzcholki srodka bryly \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_vector3_d_8hh_a01090a0f6a3d1e7e9606819bd0fafda0}{Vector3D}} \mbox{\hyperlink{class_solid_ae7428f607b6bdecc7ef4a14858ee1c88}{zczytaj\+\_\+srodek\+\_\+obiektu}} () const
+\begin{DoxyCompactList}\small\item\em umozwliwia podania nazwy pliku do ktorego zapisywane beda wierzcholki \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_solid_a3101abb6a7c507ea35b3fbf985f75572}{zczytaj\+\_\+nazwe\+\_\+obiektu}} () const
+\begin{DoxyCompactList}\small\item\em zczytuje wierzcholki srodka bryly \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_solid_acb4ad2cc34b8fe3c3bbbd9d9c706bfd8}{przesun\+\_\+o\+\_\+wektor}} (\mbox{\hyperlink{_vector3_d_8hh_a01090a0f6a3d1e7e9606819bd0fafda0}{Vector3D}} wektor\+\_\+przesuniecia)
+\begin{DoxyCompactList}\small\item\em zczytuje nazwe pliku do ktorego zapisywane beda wierzcholki \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_solid_a86f5c82470a99e67caf50e33aa0c0cd9}{obrot}} (\mbox{\hyperlink{matrix3x3_8hh_ac0b1a54ceafb28519afcbd8939668a70}{Matrix3x3}} macierz\+\_\+obrotu)
+\begin{DoxyCompactList}\small\item\em przesuwa bryle o zadany wektor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_solid_aa9d574fa9839d7f40914df3c78f298a1}{zapisz}} ()
+\begin{DoxyCompactList}\small\item\em obraca bryle o zadany kat \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_vector3_d_8hh_a01090a0f6a3d1e7e9606819bd0fafda0}{Vector3D}} \mbox{\hyperlink{class_solid_ad83b48998209ef4d9a276e8ce59359ab}{czytaj\+\_\+wierzcholki}} (int ver) const
+\begin{DoxyCompactList}\small\item\em zapisuje wspolrzedne bryly do pliku \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_solid_a41a7345f9ebdfedc7d97ca05eb573fbb}\label{class_solid_a41a7345f9ebdfedc7d97ca05eb573fbb}} 
+bool {\bfseries kolizja\+\_\+info} (shared\+\_\+ptr$<$ \mbox{\hyperlink{classobiekt}{obiekt}} $>$ object)
+\item 
+\mbox{\Hypertarget{class_solid_a2cecf91cacef5f5f28d757abb844124d}\label{class_solid_a2cecf91cacef5f5f28d757abb844124d}} 
+double {\bfseries promien} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_solid_a815d50230352a8d5ba0a48a8fead7ef6}\label{class_solid_a815d50230352a8d5ba0a48a8fead7ef6}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{_vector3_d_8hh_a01090a0f6a3d1e7e9606819bd0fafda0}{Vector3D}} $>$ {\bfseries wymiary}
+\item 
+\mbox{\Hypertarget{class_solid_a60e6384e12641bee56345b853bf96c63}\label{class_solid_a60e6384e12641bee56345b853bf96c63}} 
+std\+::vector$<$ \mbox{\hyperlink{_vector3_d_8hh_a01090a0f6a3d1e7e9606819bd0fafda0}{Vector3D}} $>$ \mbox{\hyperlink{class_solid_a60e6384e12641bee56345b853bf96c63}{wierzcholki}}
+\begin{DoxyCompactList}\small\item\em wymiary bryly \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_solid_a670f611d4e6e6444b0b05d5a495ffe16}\label{class_solid_a670f611d4e6e6444b0b05d5a495ffe16}} 
+\mbox{\hyperlink{_vector3_d_8hh_a01090a0f6a3d1e7e9606819bd0fafda0}{Vector3D}} \mbox{\hyperlink{class_solid_a670f611d4e6e6444b0b05d5a495ffe16}{srodek\+\_\+bryly}}
+\begin{DoxyCompactList}\small\item\em wierzcholki bryly \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_solid_a615623c2de6dbfcfb487631f6d647910}\label{class_solid_a615623c2de6dbfcfb487631f6d647910}} 
+std\+::string \mbox{\hyperlink{class_solid_a615623c2de6dbfcfb487631f6d647910}{nazwa\+\_\+pliku\+\_\+bryly}}
+\begin{DoxyCompactList}\small\item\em przechowuje wspolrzedne srodka bryly \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+klasa matka dla wszystkich innych klas które sa zwiazane z brylami geometrycznymi 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_solid_ad83b48998209ef4d9a276e8ce59359ab}\label{class_solid_ad83b48998209ef4d9a276e8ce59359ab}} 
+\index{Solid@{Solid}!czytaj\_wierzcholki@{czytaj\_wierzcholki}}
+\index{czytaj\_wierzcholki@{czytaj\_wierzcholki}!Solid@{Solid}}
+\doxysubsubsection{\texorpdfstring{czytaj\_wierzcholki()}{czytaj\_wierzcholki()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8hh_a01090a0f6a3d1e7e9606819bd0fafda0}{Vector3D}} Solid\+::czytaj\+\_\+wierzcholki (\begin{DoxyParamCaption}\item[{int}]{ver }\end{DoxyParamCaption}) const}
+
+
+
+zapisuje wspolrzedne bryly do pliku 
+
+zwraca konkretny wierzchołek \mbox{\Hypertarget{class_solid_a86f5c82470a99e67caf50e33aa0c0cd9}\label{class_solid_a86f5c82470a99e67caf50e33aa0c0cd9}} 
+\index{Solid@{Solid}!obrot@{obrot}}
+\index{obrot@{obrot}!Solid@{Solid}}
+\doxysubsubsection{\texorpdfstring{obrot()}{obrot()}}
+{\footnotesize\ttfamily void Solid\+::obrot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{matrix3x3_8hh_ac0b1a54ceafb28519afcbd8939668a70}{Matrix3x3}}}]{macierz\+\_\+obrotu }\end{DoxyParamCaption})}
+
+
+
+przesuwa bryle o zadany wektor 
+
+obraca bryle o zadany kat \mbox{\Hypertarget{class_solid_a43a797013fb1109e1507f85642d8dedf}\label{class_solid_a43a797013fb1109e1507f85642d8dedf}} 
+\index{Solid@{Solid}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Solid@{Solid}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8hh_a01090a0f6a3d1e7e9606819bd0fafda0}{Vector3D}} \& Solid\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+przechowuje nazwe pliku do którego zapisywane beda wierzcholki 
+
+operator indeksujacy \mbox{\Hypertarget{class_solid_acb4ad2cc34b8fe3c3bbbd9d9c706bfd8}\label{class_solid_acb4ad2cc34b8fe3c3bbbd9d9c706bfd8}} 
+\index{Solid@{Solid}!przesun\_o\_wektor@{przesun\_o\_wektor}}
+\index{przesun\_o\_wektor@{przesun\_o\_wektor}!Solid@{Solid}}
+\doxysubsubsection{\texorpdfstring{przesun\_o\_wektor()}{przesun\_o\_wektor()}}
+{\footnotesize\ttfamily void Solid\+::przesun\+\_\+o\+\_\+wektor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8hh_a01090a0f6a3d1e7e9606819bd0fafda0}{Vector3D}}}]{wektor\+\_\+przesuniecia }\end{DoxyParamCaption})}
+
+
+
+zczytuje nazwe pliku do ktorego zapisywane beda wierzcholki 
+
+przesuwa bryle o zadany wektor \mbox{\Hypertarget{class_solid_a7adccb70a171af7c4f0298c8b1073d68}\label{class_solid_a7adccb70a171af7c4f0298c8b1073d68}} 
+\index{Solid@{Solid}!ustaw\_nazwe\_pliku@{ustaw\_nazwe\_pliku}}
+\index{ustaw\_nazwe\_pliku@{ustaw\_nazwe\_pliku}!Solid@{Solid}}
+\doxysubsubsection{\texorpdfstring{ustaw\_nazwe\_pliku()}{ustaw\_nazwe\_pliku()}}
+{\footnotesize\ttfamily void Solid\+::ustaw\+\_\+nazwe\+\_\+pliku (\begin{DoxyParamCaption}\item[{std\+::string}]{nazwa\+\_\+pliku\+\_\+bryly }\end{DoxyParamCaption})}
+
+
+
+ustawia wierzcholki srodka bryly 
+
+umozwliwia podania nazwy pliku do ktorego zapisywane beda wierzcholki \mbox{\Hypertarget{class_solid_aa9d574fa9839d7f40914df3c78f298a1}\label{class_solid_aa9d574fa9839d7f40914df3c78f298a1}} 
+\index{Solid@{Solid}!zapisz@{zapisz}}
+\index{zapisz@{zapisz}!Solid@{Solid}}
+\doxysubsubsection{\texorpdfstring{zapisz()}{zapisz()}}
+{\footnotesize\ttfamily void Solid\+::zapisz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+obraca bryle o zadany kat 
+
+zapisuje wspolrzedne bryly do pliku 
+
+Implements \mbox{\hyperlink{classobiekt}{obiekt}}.
+
+\mbox{\Hypertarget{class_solid_a3101abb6a7c507ea35b3fbf985f75572}\label{class_solid_a3101abb6a7c507ea35b3fbf985f75572}} 
+\index{Solid@{Solid}!zczytaj\_nazwe\_obiektu@{zczytaj\_nazwe\_obiektu}}
+\index{zczytaj\_nazwe\_obiektu@{zczytaj\_nazwe\_obiektu}!Solid@{Solid}}
+\doxysubsubsection{\texorpdfstring{zczytaj\_nazwe\_obiektu()}{zczytaj\_nazwe\_obiektu()}}
+{\footnotesize\ttfamily std\+::string Solid\+::zczytaj\+\_\+nazwe\+\_\+obiektu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+zczytuje wierzcholki srodka bryly 
+
+zczytuje nazwe pliku do ktorego zapisywane beda wierzcholki 
+
+Implements \mbox{\hyperlink{classobiekt}{obiekt}}.
+
+\mbox{\Hypertarget{class_solid_ae7428f607b6bdecc7ef4a14858ee1c88}\label{class_solid_ae7428f607b6bdecc7ef4a14858ee1c88}} 
+\index{Solid@{Solid}!zczytaj\_srodek\_obiektu@{zczytaj\_srodek\_obiektu}}
+\index{zczytaj\_srodek\_obiektu@{zczytaj\_srodek\_obiektu}!Solid@{Solid}}
+\doxysubsubsection{\texorpdfstring{zczytaj\_srodek\_obiektu()}{zczytaj\_srodek\_obiektu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8hh_a01090a0f6a3d1e7e9606819bd0fafda0}{Vector3D}} Solid\+::zczytaj\+\_\+srodek\+\_\+obiektu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+umozwliwia podania nazwy pliku do ktorego zapisywane beda wierzcholki 
+
+zczytuje wierzcholki srodka bryly 
+
+Implements \mbox{\hyperlink{classobiekt}{obiekt}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/adam/programowanie/zad5\+\_\+3-\/\+Adam\+Domachowski/inc/Solid.\+hh\item 
+/home/adam/programowanie/zad5\+\_\+3-\/\+Adam\+Domachowski/src/\mbox{\hyperlink{_solid_8cpp}{Solid.\+cpp}}\end{DoxyCompactItemize}

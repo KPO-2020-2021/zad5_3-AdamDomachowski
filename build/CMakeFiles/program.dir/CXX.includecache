@@ -17,7 +17,9 @@ Cuboid.hh
 ../inc/Cuboid.hh
 prism6.hh
 ../inc/prism6.hh
-../inc/lacze_do_gnuplota.hh
+obiekt.hh
+../inc/obiekt.hh
+lacze_do_gnuplota.hh
 ../inc/lacze_do_gnuplota.hh
 
 ../inc/Matrix.hh
@@ -64,24 +66,6 @@ cmath
 Vector.hh
 ../inc/Vector.hh
 
-../inc/bottom.hh
-Vector3D.hh
-../inc/Vector3D.hh
-matrix3x3.hh
-../inc/matrix3x3.hh
-fstream
--
-vector
--
-
-../inc/goraGran.hh
-Solid.hh
-../inc/Solid.hh
-
-../inc/goraSzczyt.hh
-Solid.hh
-../inc/Solid.hh
-
 ../inc/lacze_do_gnuplota.hh
 string
 -
@@ -99,46 +83,14 @@ string
 -
 memory
 -
-Vector3D.hh
-../inc/Vector3D.hh
-
-../inc/plaskowyz.hh
-Solid.hh
-../inc/Solid.hh
 
 ../inc/prism6.hh
 Solid.hh
 ../inc/Solid.hh
-
-../inc/scena.hh
-iostream
--
-list
--
-memory
--
-iomanip
--
-fstream
--
-goraGran.hh
-../inc/goraGran.hh
-goraSzczyt.hh
-../inc/goraSzczyt.hh
-plaskowyz.hh
-../inc/plaskowyz.hh
-prism6.hh
-../inc/prism6.hh
-lacze_do_gnuplota.hh
-../inc/lacze_do_gnuplota.hh
-Drone.hh
-../inc/Drone.hh
-bottom.hh
-../inc/bottom.hh
 
 ../inc/size.hh
 
-/home/adam/programowanie/zad5_3-AdamDomachowski/src/scena.cpp
-scena.hh
-/home/adam/programowanie/zad5_3-AdamDomachowski/src/scena.hh
+/home/adam/programowanie/zad5_3-AdamDomachowski/src/Drone.cpp
+Drone.hh
+/home/adam/programowanie/zad5_3-AdamDomachowski/src/Drone.hh
 

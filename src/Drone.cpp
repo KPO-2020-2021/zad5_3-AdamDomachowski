@@ -20,13 +20,13 @@
 
         for(int i=0; i<4; i++)
         {
-        wings_org[i].ustaw_nazwe_pliku("../datas/wings"+std::to_string(i)+std::to_string(nr_drona)+".dat");
+        wings_org[i].ustaw_nazwe_pliku("../datas/wings"+std::to_string(nr_drona)+std::to_string(i)+".dat");
         }
-        Lacze.DodajNazwePliku(body_org.jaka_nazwa().c_str());
+        Lacze.DodajNazwePliku(body_org.zczytaj_nazwe_obiektu().c_str());
 
         for(int i=0; i<4; i++)
         {
-        Lacze.DodajNazwePliku(wings_org[i].jaka_nazwa().c_str());
+        Lacze.DodajNazwePliku(wings_org[i].zczytaj_nazwe_obiektu().c_str());
         }
         
         body_copy = body_org;
@@ -50,9 +50,9 @@
 
   void Drone::usun()
   {
-    Lacze.UsunNazwePliku(body_org.jaka_nazwa().c_str());
+    Lacze.UsunNazwePliku(body_org.zczytaj_nazwe_obiektu().c_str());
     for (int i = 0; i < 4; i++)
-        Lacze.UsunNazwePliku(wings_org[i].jaka_nazwa().c_str());
+        Lacze.UsunNazwePliku(wings_org[i].zczytaj_nazwe_obiektu().c_str());
   }
 
 /*!
@@ -121,10 +121,10 @@
 */
     void Drone::zapisz()
     {
-        body_copy.zapisz_do_pliku();
+        body_copy.zapisz();
         for(int i=0; i<4; i++)
         {
-            wings_copy[i].zapisz_do_pliku();
+            wings_copy[i].zapisz();
         }
     }
 
@@ -146,7 +146,7 @@
 /*!
     \brief funkcja odpowiadająca za pilotaz dronem.
 */
-    void Drone::pilot()
+    void Drone::pilot(std::list<std::shared_ptr<obiekt>> &lista_elementow)
     {
         double droga;
         double kat;
@@ -158,6 +158,7 @@
         switch (wybor)
         {
         case 'l':
+        {
             std::cout << "podaj droge: ";
             std::cin >> droga;
             narysuj_trase(droga);
@@ -168,13 +169,13 @@
             for (int j = 0; j < 4; j++)
                 wings_copy[j] = wings_org[j]; 
             lot_do_gory(1);
-            obrot_wiernikow();
+           obrot_wiernikow();
             zapisz();
             Lacze.Rysuj();
             usleep(10000);
-            }       
-
-
+            }
+            bool kolizja = false;
+            while(1){       
             for (int i=0;i<droga; i++)
             {
             body_copy = body_org;    
@@ -189,25 +190,49 @@
             usleep(10000);
             }
 
-
-            for (int i=0;i<100; i++)
+            for (std::list<std::shared_ptr<obiekt>>::const_iterator a = lista_elementow.begin(); a != lista_elementow.end(); a++)
             {
-            body_copy=body_org;
-            for (int j = 0; j < 4; j++)
-                wings_copy[j] = wings_org[j]; 
-            lot_do_gory(-1);
-            obrot_wiernikow();
-            zapisz();
-            Lacze.Rysuj();
-            usleep(10000);
+            std::cout <<"*";
+            body_copy=body_org; 
+            lot_do_gory(-100);
+            if (kolizja_info(*a)){
+                std::cout << "kolizja z"+ (*a)->zczytaj_nazwe_obiektu() << std::endl;
+                kolizja = true;
+            }
+            body_copy = body_org;
+            lot_do_gory(100);
             }  
-            Lacze.UsunNazwePliku("../datas/trasa.dat"); 
-            break;
+
+            if(!kolizja)
+            {
+                break;
+            }
+            kolizja=false;
+            droga = 10;
+            narysuj_trase(droga);
+            }
+            for (int i =0; i<100; i++)
+            {
+                body_copy = body_org;
+                for(int j =0; j<4; j++)
+                {
+                    wings_copy[j] = wings_org[j];
+                }
+                lot_do_gory(-1);
+                obrot_wiernikow();
+                zapisz();
+                Lacze.Rysuj();
+                usleep(10000);
+            }
+            Lacze.UsunNazwePliku("../datas/droga.dat");
+        }
+        break;
 
         case 'o':
+        {
             std::cout << "podaj kat (w stopniach) obrotu: ";
             std::cin >> kat;
-            if (kat >=0){
+            if (kat > 0){
                 for (int i=0;i<kat; i++)
                 {
                 body_copy = body_org;   
@@ -226,7 +251,11 @@
             {
                 for (int i=0;i>kat; i--)
                 {
-                body_copy = body_org;   
+                body_copy = body_org;  
+                for(int j=0; j<4; j++)
+                {
+                wings_copy[j] = wings_org[j];
+                } 
                 obrot(-1);
                 obrot_wiernikow();
                 zapisz();
@@ -234,6 +263,7 @@
                 usleep(10000);
                 }
             }
+         }
             break;
 
         case 'm':
@@ -244,9 +274,10 @@
         << "k - powrot do main menu" << std::endl << std::endl;
             break;
 
-        case 'k':
+        case 'k':{
         stop = 1;
-            ;
+        }
+            break;
         
         default:
             break;
@@ -262,7 +293,7 @@
 */
     void Drone::narysuj_trase(double droga)
 {
-    Vector3D nastepny = body_copy.zczytaj_srodek();
+    Vector3D nastepny = body_copy.zczytaj_srodek_obiektu();
     nastepny[2] = 0;
     trajektoria.push_back(nastepny);
 
@@ -285,4 +316,29 @@
         plik << trajektoria[i] << std::endl;
     }
     plik.close();
+}
+
+
+bool Drone::kolizja_info(shared_ptr <obiekt> object)
+{
+    std::shared_ptr<Drone> A = shared_from_this();
+
+    if (object != A)
+    {
+
+        Vector3D srodek_Drona = body_copy.zczytaj_srodek_obiektu();
+        Vector3D srodek_Obiektu = object->zczytaj_srodek_obiektu();
+        double l = sqrt(pow(srodek_Drona[0] - srodek_Obiektu[0], 2) + pow(srodek_Drona[1] - srodek_Obiektu[1], 2) + pow(srodek_Drona[2] - srodek_Obiektu[2], 2));
+        if (promienR + object->promien() >= l)
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
+
+Vector3D Drone::zczytaj_srodek_obiektu() const
+{
+    return body_copy.zczytaj_srodek_obiektu();
 }

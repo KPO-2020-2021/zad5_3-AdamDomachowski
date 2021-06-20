@@ -35,6 +35,5 @@
 /home/adam/programowanie/zad5_3-AdamDomachowski/build/tests/CMakeFiles/rebuild_cache.dir
 /home/adam/programowanie/zad5_3-AdamDomachowski/build/tests/CMakeFiles/edit_cache.dir
 /home/adam/programowanie/zad5_3-AdamDomachowski/build/tests/CMakeFiles/test.dir
-/home/adam/programowanie/zad5_3-AdamDomachowski/build/tests/CMakeFiles/fulltest.dir
 /home/adam/programowanie/zad5_3-AdamDomachowski/build/tests/CMakeFiles/coverage.dir
 /home/adam/programowanie/zad5_3-AdamDomachowski/build/tests/CMakeFiles/unit_tests.dir

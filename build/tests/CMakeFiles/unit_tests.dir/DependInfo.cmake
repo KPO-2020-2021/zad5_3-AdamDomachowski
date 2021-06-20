@@ -6,7 +6,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/adam/programowanie/zad5_3-AdamDomachowski/tests/dummy.cpp" "/home/adam/programowanie/zad5_3-AdamDomachowski/build/tests/CMakeFiles/unit_tests.dir/dummy.cpp.o"
   "/home/adam/programowanie/zad5_3-AdamDomachowski/tests/main.cpp" "/home/adam/programowanie/zad5_3-AdamDomachowski/build/tests/CMakeFiles/unit_tests.dir/main.cpp.o"
-  "/home/adam/programowanie/zad5_3-AdamDomachowski/tests/tests.cpp" "/home/adam/programowanie/zad5_3-AdamDomachowski/build/tests/CMakeFiles/unit_tests.dir/tests.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

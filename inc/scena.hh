@@ -12,7 +12,7 @@
 #include "lacze_do_gnuplota.hh"
 #include "Drone.hh"
 #include "bottom.hh"
-#define ilosc_dronow_na_scenie 3
+#define ilosc_dronow_na_scenie  3
 /*! \brief klasa Scena odpowiada za umieszczanie obiektów na scenie oraz za obslge uzytkownika */
 
 class Scena
@@ -28,4 +28,5 @@ Scena(); /*! \brief przygotowuje scene*/
 void rysuj(); /*! \brief rysuje sytuacje*/
 void dodaj_drona(); /*! \brief rysuje sytuacje*/
 bool menu(); /*! \brief wyswietla menu i odpowiada za wybor drona*/
+
 };

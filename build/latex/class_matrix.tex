@@ -1,0 +1,263 @@
+\hypertarget{class_matrix}{}\doxysection{Matrix$<$ S\+I\+ZE $>$ Class Template Reference}
+\label{class_matrix}\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+
+
+klasa matrix odpowiada za wszystkie dzialania na macierzach  
+
+
+
+
+{\ttfamily \#include $<$Matrix.\+hh$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_matrix_a6ad13ada55f1e7c5b3a6aa8dc831209e}{Matrix}} ()
+\begin{DoxyCompactList}\small\item\em konstruktor bezparametryczny \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_matrix_af8ed4d409be20420f32d67130a66035e}{Matrix}} (double\mbox{[}S\+I\+ZE\mbox{]}\mbox{[}S\+I\+ZE\mbox{]})
+\begin{DoxyCompactList}\small\item\em konstruktor parametryczny \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$ \mbox{\hyperlink{class_matrix_a87732a487c1f0d5f9289efa462709015}{operator$\ast$}} (\mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$ const \&tmp)
+\begin{DoxyCompactList}\small\item\em operator mnozenia macierzy przez wektor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$ \mbox{\hyperlink{class_matrix_acbe3b78799335bc63cf6268b68d6b19b}{operator$\ast$}} (\mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$ tmp)
+\begin{DoxyCompactList}\small\item\em operator mnozenia macierzy przez macierz \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$ \mbox{\hyperlink{class_matrix_a924b76af78e5217f5fbc8b10f7879f91}{operator+}} (\mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$ tmp)
+\begin{DoxyCompactList}\small\item\em dodaje dwie macierze ze soba \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_matrix}{Matrix}} \mbox{\hyperlink{class_matrix_afe44e050b0bfe776f279f791fe5de355}{reset\+\_\+matrix}} ()
+\begin{DoxyCompactList}\small\item\em resetuje macierz do jednostkowej \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_matrix_a0e8d8df0246a429122afb0bc576b61b5}{operator==}} (\mbox{\hyperlink{class_matrix}{Matrix}} const \&tmp)
+\begin{DoxyCompactList}\small\item\em operator przyrównania dwóch macierzy \end{DoxyCompactList}\item 
+double \& \mbox{\hyperlink{class_matrix_a4002e995b530bfcc464523dd39926005}{operator()}} (unsigned int row, unsigned int column)
+\begin{DoxyCompactList}\small\item\em operator indeksujacy \end{DoxyCompactList}\item 
+const double \& \mbox{\hyperlink{class_matrix_a76d4f095f8ee04310044df89a562901f}{operator()}} (unsigned int row, unsigned int column) const
+\begin{DoxyCompactList}\small\item\em operator indeksujacy \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_matrix_af9fb043908fc651c929476a786427e32}\label{class_matrix_af9fb043908fc651c929476a786427e32}} 
+double \mbox{\hyperlink{class_matrix_af9fb043908fc651c929476a786427e32}{oblicz\+\_\+wyzn}} ()
+\begin{DoxyCompactList}\small\item\em za pomocą metody eliminacji gausa oblicza wyznacznik macierzy \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$int S\+I\+ZE$>$\newline
+class Matrix$<$ S\+I\+Z\+E $>$}
+
+klasa matrix odpowiada za wszystkie dzialania na macierzach 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_matrix_a6ad13ada55f1e7c5b3a6aa8dc831209e}\label{class_matrix_a6ad13ada55f1e7c5b3a6aa8dc831209e}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$\+::\mbox{\hyperlink{class_matrix}{Matrix}}}
+
+
+
+konstruktor bezparametryczny 
+
+Konstruktor bezparametryczny klasy \mbox{\hyperlink{class_matrix}{Matrix}}. ~\newline
+ \begin{DoxyReturn}{Returns}
+Macierz jednostkowa. ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_matrix_af8ed4d409be20420f32d67130a66035e}\label{class_matrix_af8ed4d409be20420f32d67130a66035e}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$\+::\mbox{\hyperlink{class_matrix}{Matrix}} (\begin{DoxyParamCaption}\item[{double}]{tmp\mbox{[}\+S\+I\+Z\+E\mbox{]}\mbox{[}\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+konstruktor parametryczny 
+
+Konstruktor parametryczny klasy \mbox{\hyperlink{class_matrix}{Matrix}}. ~\newline
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em tmp} & -\/ dwuwymiarowa tablica z elementami typu double. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Macierz wypelniona wartosciami podanymi w argumencie. ~\newline
+ 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_matrix_a4002e995b530bfcc464523dd39926005}\label{class_matrix_a4002e995b530bfcc464523dd39926005}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+double \& \mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$\+::operator() (\begin{DoxyParamCaption}\item[{unsigned int}]{row,  }\item[{unsigned int}]{column }\end{DoxyParamCaption})}
+
+
+
+operator indeksujacy 
+
+Funktor macierzy.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em row} & -\/ numer wiersza. ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em column} & -\/ numer kolumny. ~\newline
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wartosc macierzy w danym miejscu tablicy. ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_matrix_a76d4f095f8ee04310044df89a562901f}\label{class_matrix_a76d4f095f8ee04310044df89a562901f}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+const double \& \mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$\+::operator() (\begin{DoxyParamCaption}\item[{unsigned int}]{row,  }\item[{unsigned int}]{column }\end{DoxyParamCaption}) const}
+
+
+
+operator indeksujacy 
+
+Funktor macierzy.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em row} & -\/ numer wiersza. ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em column} & -\/ numer kolumny. ~\newline
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wartosc macierzy w danym miejscu tablicy. ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_matrix_acbe3b78799335bc63cf6268b68d6b19b}\label{class_matrix_acbe3b78799335bc63cf6268b68d6b19b}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$ \mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$}]{tmp }\end{DoxyParamCaption})}
+
+
+
+operator mnozenia macierzy przez macierz 
+
+Realizuje mnozenie macierzy przez macierz. ~\newline
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em this} & -\/ macierz, czyli pierwszy skladnik mnozenia, ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em tmp} & -\/ macierz, czyli drugi skladnik mnozenia. ~\newline
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+result -\/ Iloczyn dwoch skladnikow przekazanych jako macierz. ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_matrix_a87732a487c1f0d5f9289efa462709015}\label{class_matrix_a87732a487c1f0d5f9289efa462709015}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$ \mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$ const \&}]{tmp }\end{DoxyParamCaption})}
+
+
+
+operator mnozenia macierzy przez wektor 
+
+Realizuje mnozenie macierzy przez wektor. ~\newline
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em this} & -\/ macierz, czyli pierwszy skladnik mnozenia, ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em tmp} & -\/ wektor, czyli drugi skladnik mnozenia. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Iloczyn dwoch skladnikow przekazanych jako wektor. ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_matrix_a924b76af78e5217f5fbc8b10f7879f91}\label{class_matrix_a924b76af78e5217f5fbc8b10f7879f91}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!operator+@{operator+}}
+\index{operator+@{operator+}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$ \mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$}]{tmp }\end{DoxyParamCaption})}
+
+
+
+dodaje dwie macierze ze soba 
+
+Przeciążenie operatora dodawania dwoch macierzy. ~\newline
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em this} & -\/ Macierz, czyli pierwszy skladnik dodawania. ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em tmp} & -\/ Macierz, czyli drugi skladnik dodawania. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Macierz -\/ suma dwóch podanych macierzy. ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_matrix_a0e8d8df0246a429122afb0bc576b61b5}\label{class_matrix_a0e8d8df0246a429122afb0bc576b61b5}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+bool \mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$ const \&}]{tmp }\end{DoxyParamCaption})}
+
+
+
+operator przyrównania dwóch macierzy 
+
+Realizuje porownywanie wartosci w dwoch macierzach. ~\newline
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em this} & -\/ macierz, czyli pierwszy skladnik porownania, ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em tmp} & -\/ macierz, czyli drugi skladnik porownania. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ jesli macierze sa rowne. ~\newline
+ 
+
+false -\/ jesli macierze nie sa rowne. ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_matrix_afe44e050b0bfe776f279f791fe5de355}\label{class_matrix_afe44e050b0bfe776f279f791fe5de355}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!reset\_matrix@{reset\_matrix}}
+\index{reset\_matrix@{reset\_matrix}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{reset\_matrix()}{reset\_matrix()}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$ \mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$\+::reset\+\_\+matrix}
+
+
+
+resetuje macierz do jednostkowej 
+
+metoda resetujaca macierz do jednostkowej ~\newline
+ \begin{DoxyReturn}{Returns}
+Macierz jednostkowa ~\newline
+ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/adam/programowanie/zad5\+\_\+3-\/\+Adam\+Domachowski/inc/Matrix.\+hh\end{DoxyCompactItemize}

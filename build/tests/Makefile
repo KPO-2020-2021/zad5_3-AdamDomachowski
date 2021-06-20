@@ -122,21 +122,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-tests/CMakeFiles/fulltest.dir/rule:
-	cd /home/adam/programowanie/zad5_3-AdamDomachowski/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/fulltest.dir/rule
-.PHONY : tests/CMakeFiles/fulltest.dir/rule
-
-# Convenience name for target.
-fulltest: tests/CMakeFiles/fulltest.dir/rule
-
-.PHONY : fulltest
-
-# fast build rule for target.
-fulltest/fast:
-	cd /home/adam/programowanie/zad5_3-AdamDomachowski/build && $(MAKE) -f tests/CMakeFiles/fulltest.dir/build.make tests/CMakeFiles/fulltest.dir/build
-.PHONY : fulltest/fast
-
-# Convenience name for target.
 tests/CMakeFiles/coverage.dir/rule:
 	cd /home/adam/programowanie/zad5_3-AdamDomachowski/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/coverage.dir/rule
 .PHONY : tests/CMakeFiles/coverage.dir/rule
@@ -220,33 +205,6 @@ main.cpp.s:
 	cd /home/adam/programowanie/zad5_3-AdamDomachowski/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-tests.o: tests.cpp.o
-
-.PHONY : tests.o
-
-# target to build an object file
-tests.cpp.o:
-	cd /home/adam/programowanie/zad5_3-AdamDomachowski/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/tests.cpp.o
-.PHONY : tests.cpp.o
-
-tests.i: tests.cpp.i
-
-.PHONY : tests.i
-
-# target to preprocess a source file
-tests.cpp.i:
-	cd /home/adam/programowanie/zad5_3-AdamDomachowski/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/tests.cpp.i
-.PHONY : tests.cpp.i
-
-tests.s: tests.cpp.s
-
-.PHONY : tests.s
-
-# target to generate assembly for a file
-tests.cpp.s:
-	cd /home/adam/programowanie/zad5_3-AdamDomachowski/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/tests.cpp.s
-.PHONY : tests.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -256,7 +214,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... fulltest"
 	@echo "... coverage"
 	@echo "... unit_tests"
 	@echo "... dummy.o"
@@ -265,9 +222,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... tests.o"
-	@echo "... tests.i"
-	@echo "... tests.s"
 .PHONY : help
 
 

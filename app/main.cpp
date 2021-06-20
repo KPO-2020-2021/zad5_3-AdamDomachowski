@@ -18,20 +18,14 @@
 #include "Drone.hh"
 #include "../inc/lacze_do_gnuplota.hh"
 
+using namespace std;
+
 /*! \brief tu sie dzieje program*/
 
 
 int main()
 {
-       std::cout << "Dron 5.2 by studenciak"
-                 << PROJECT_VERSION_MAJOR /*duże zmiany, najczęściej brak kompatybilności wstecz */
-                 << "."
-                 << PROJECT_VERSION_MINOR /* istotne zmiany */
-                 << "."
-                 << PROJECT_VERSION_PATCH /* naprawianie bugów */
-                 << "."
-                 << PROJECT_VERSION_TWEAK /* zmiany estetyczne itd. */
-                 << std::endl;
-   Scena Scena;
-       while (Scena.menu()){Scena.rysuj();}
+srand(time(NULL));
+Scena Scena;
+while (Scena.menu()){Scena.rysuj();}
 }

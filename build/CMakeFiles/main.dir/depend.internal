@@ -14,6 +14,7 @@ CMakeFiles/main.dir/app/main.cpp.o
  ../inc/goraSzczyt.hh
  ../inc/lacze_do_gnuplota.hh
  ../inc/matrix3x3.hh
+ ../inc/obiekt.hh
  ../inc/plaskowyz.hh
  ../inc/prism6.hh
  ../inc/scena.hh

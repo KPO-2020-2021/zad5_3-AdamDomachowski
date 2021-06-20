@@ -6,7 +6,7 @@ class Cuboid : public Solid
 {
 public:
 /*! \brief konstruktor parametryczny*/
-Cuboid(Vector3D srodek=Vector3D(), double a=30, double b=30, double c=20, std::string nazwa_pliku_prostopadloscianu = "../datas/cuboid.dat");
+Cuboid(Vector3D srodek=Vector3D(), double a=50, double b=50, double c=50, std::string nazwa_pliku_prostopadloscianu = "../datas/cuboid.dat");
 Cuboid( Cuboid& cub );
 Cuboid &operator=(const Cuboid &drugi)
 {

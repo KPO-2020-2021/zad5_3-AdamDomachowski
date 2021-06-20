@@ -2,7 +2,8 @@
 #include <unistd.h>
 #include "Cuboid.hh"
 #include "prism6.hh"
-#include "../inc/lacze_do_gnuplota.hh"
+#include "obiekt.hh"
+#include "lacze_do_gnuplota.hh"
 
 /*! \brief klasa drona przechowuje wszystkie informacje, metody, funkcje dotyczace dronow*/
 
@@ -11,6 +12,7 @@ class Drone :public obiekt, public std::enable_shared_from_this<Drone>
     PzG::LaczeDoGNUPlota &Lacze;
     int nr_drona; /*! \brief numer drona do identyfikacji obiektu*/
     double kat;   /*! \brief kat obrotu*/
+    double promienR;
     std::vector<Vector3D> trajektoria; /*! \brief trajektoria lotu drona*/
     Matrix3x3 macierz_obrotu; /*! \brief macierz do oborotu bryly*/
     Vector3D droga; /*! \brief na podstawie drogi obliczany jest wektor przesuniecia*/
@@ -51,5 +53,11 @@ public:
     void usun();
 
 
-    bool kolizja_info(std::shared_ptr <obiekt> object);
+    Vector3D zczytaj_srodek_obiektu() const;
+
+    std::string zczytaj_nazwe_obiektu()const{return "";}
+
+    bool kolizja_info(shared_ptr <obiekt> object);
+
+    double promien(){return body_copy.promien();}
 };

@@ -525,19 +525,6 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
-# Target rules for targets named fulltest
-
-# Build rule for target.
-fulltest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 fulltest
-.PHONY : fulltest
-
-# fast build rule for target.
-fulltest/fast:
-	$(MAKE) -f tests/CMakeFiles/fulltest.dir/build.make tests/CMakeFiles/fulltest.dir/build
-.PHONY : fulltest/fast
-
-#=============================================================================
 # Target rules for targets named coverage
 
 # Build rule for target.
@@ -954,7 +941,6 @@ help:
 	@echo "... ContinuousMemCheck"
 	@echo "... ContinuousTest"
 	@echo "... ContinuousSubmit"
-	@echo "... fulltest"
 	@echo "... coverage"
 	@echo "... unit_tests"
 	@echo "... app/main.o"

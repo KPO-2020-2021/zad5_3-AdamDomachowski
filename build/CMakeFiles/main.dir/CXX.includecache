@@ -17,7 +17,9 @@ Cuboid.hh
 ../inc/Cuboid.hh
 prism6.hh
 ../inc/prism6.hh
-../inc/lacze_do_gnuplota.hh
+obiekt.hh
+../inc/obiekt.hh
+lacze_do_gnuplota.hh
 ../inc/lacze_do_gnuplota.hh
 
 ../inc/Matrix.hh
@@ -43,6 +45,8 @@ vector
 -
 memory
 -
+obiekt.hh
+../inc/obiekt.hh
 
 ../inc/Vector.hh
 size.hh
@@ -95,6 +99,12 @@ vector
 ../inc/matrix3x3.hh
 Matrix.hh
 ../inc/Matrix.hh
+
+../inc/obiekt.hh
+string
+-
+memory
+-
 
 ../inc/plaskowyz.hh
 Solid.hh

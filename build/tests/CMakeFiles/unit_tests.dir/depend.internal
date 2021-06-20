@@ -6,24 +6,5 @@ tests/CMakeFiles/unit_tests.dir/dummy.cpp.o
  /home/adam/programowanie/zad5_3-AdamDomachowski/tests/doctest/doctest.h
  /home/adam/programowanie/zad5_3-AdamDomachowski/tests/dummy.cpp
 tests/CMakeFiles/unit_tests.dir/main.cpp.o
- /home/adam/programowanie/zad5_3-AdamDomachowski/tests/main.cpp
-tests/CMakeFiles/unit_tests.dir/tests.cpp.o
- ../inc/Cuboid.hh
- ../inc/Drone.hh
- ../inc/Matrix.hh
- ../inc/Solid.hh
- ../inc/Vector.hh
- ../inc/Vector2D.hh
- ../inc/Vector3D.hh
- ../inc/bottom.hh
- ../inc/goraGran.hh
- ../inc/goraSzczyt.hh
- ../inc/lacze_do_gnuplota.hh
- ../inc/matrix2x2.hh
- ../inc/matrix3x3.hh
- ../inc/plaskowyz.hh
- ../inc/prism6.hh
- ../inc/scena.hh
- ../inc/size.hh
  /home/adam/programowanie/zad5_3-AdamDomachowski/tests/doctest/doctest.h
- /home/adam/programowanie/zad5_3-AdamDomachowski/tests/tests.cpp
+ /home/adam/programowanie/zad5_3-AdamDomachowski/tests/main.cpp
