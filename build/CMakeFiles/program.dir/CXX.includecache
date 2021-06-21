@@ -138,6 +138,34 @@ bottom.hh
 
 ../inc/size.hh
 
+/home/adam/programowanie/zad5_3-AdamDomachowski/src/Drone.cpp
+Drone.hh
+/home/adam/programowanie/zad5_3-AdamDomachowski/src/Drone.hh
+
+/home/adam/programowanie/zad5_3-AdamDomachowski/src/Solid.cpp
+Solid.hh
+/home/adam/programowanie/zad5_3-AdamDomachowski/src/Solid.hh
+
+/home/adam/programowanie/zad5_3-AdamDomachowski/src/cuboid.cpp
+Cuboid.hh
+/home/adam/programowanie/zad5_3-AdamDomachowski/src/Cuboid.hh
+
+/home/adam/programowanie/zad5_3-AdamDomachowski/src/goraGran.cpp
+goraGran.hh
+/home/adam/programowanie/zad5_3-AdamDomachowski/src/goraGran.hh
+
+/home/adam/programowanie/zad5_3-AdamDomachowski/src/goraSzczyt.cpp
+goraSzczyt.hh
+/home/adam/programowanie/zad5_3-AdamDomachowski/src/goraSzczyt.hh
+
+/home/adam/programowanie/zad5_3-AdamDomachowski/src/plaskowyz.cpp
+plaskowyz.hh
+/home/adam/programowanie/zad5_3-AdamDomachowski/src/plaskowyz.hh
+
+/home/adam/programowanie/zad5_3-AdamDomachowski/src/prism6.cpp
+prism6.hh
+/home/adam/programowanie/zad5_3-AdamDomachowski/src/prism6.hh
+
 /home/adam/programowanie/zad5_3-AdamDomachowski/src/scena.cpp
 scena.hh
 /home/adam/programowanie/zad5_3-AdamDomachowski/src/scena.hh

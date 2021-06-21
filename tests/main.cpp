@@ -223,3 +223,77 @@ TEST_CASE("reset macierzy."){
     CHECK((temp==jednostkowa));
 }
 
+//testy dla Cuboid
+
+
+TEST_CASE("Test konstrukora bezparametrycznego"){
+    Cuboid Example;
+
+    std::string name = ("../datas/cuboid.dat");
+
+    CHECK((Example.zczytaj_nazwe_obiektu() == name));
+
+    Vector3D srodek = Example.zczytaj_srodek_obiektu();
+
+    double poprawny[3] = {0.0000000000,0.0000000000,0.0000000000};
+
+    Vector3D pop_srod = Vector3D(poprawny);
+    
+    CHECK((srodek == pop_srod));
+
+    CHECK(( Example.czytaj_wierzcholki(0)[0] == -25 && Example.czytaj_wierzcholki(0)[1] == 25 && Example.czytaj_wierzcholki(0)[2] == 50));
+}
+
+TEST_CASE("przyrownanie dwoch prostoklatow"){
+    Cuboid a,b;
+    for (int i=0; i<8; i++){
+        for (int j=0; j<3; j++){
+            CHECK((a.czytaj_wierzcholki(i)[j]==b.czytaj_wierzcholki(i)[j]));
+        }
+    }
+}
+
+
+//testy dla prism6
+
+TEST_CASE("Test konstrukora bezparametrycznego"){
+    Prism6 Example;
+
+    std::string name = ("../datas/graniastoslup6.dat");
+
+    CHECK((Example.zczytaj_nazwe_obiektu() == name));
+
+    Vector3D srodek = Example.zczytaj_srodek_obiektu();
+
+    double poprawny[3] = {0.0000000000,0.0000000000,0.0000000000};
+
+    Vector3D pop_srod = Vector3D(poprawny);
+    
+    CHECK((srodek == pop_srod));
+
+    //std::cout << Example.zczytaj_nazwe_obiektu() <<  Example.czytaj_wierzcholki(0); 
+
+    CHECK(( Example.czytaj_wierzcholki(0)[0] == 20 && Example.czytaj_wierzcholki(0)[1] == 0 && Example.czytaj_wierzcholki(0)[2] == 7.5));
+}
+
+TEST_CASE("przyrownanie dwoch prostoklatow"){
+    Prism6 a,b;
+    for (int i=0; i<12; i++){
+        for (int j=0; j<3; j++){
+            CHECK((a.czytaj_wierzcholki(i)[j]==b.czytaj_wierzcholki(i)[j]));
+        }
+    }
+}
+
+
+//testy dla Drone
+
+TEST_CASE("Test konstruktora klasy z parametrem drona."){
+    PzG::LaczeDoGNUPlota Lacze;
+    double sr[3]={100,100,3};
+    Vector3D center(sr);
+    Drone Example(1,Lacze,sr);
+    CHECK((Example.zczytaj_srodek_obiektu()[0] ==100 && Example.zczytaj_srodek_obiektu()[1] == 100 && Example.zczytaj_srodek_obiektu()[2] == 3));    
+}
+
+
