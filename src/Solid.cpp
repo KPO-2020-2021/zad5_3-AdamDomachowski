@@ -94,7 +94,7 @@ void Solid::zapisz()
     plik.close();
 }
 
-
+/*! \brief informuje o mozliwosci kolizji z obiektem*/
 bool Solid::kolizja_info(std::shared_ptr <obiekt> object)
 {
     std::shared_ptr<Solid> self = shared_from_this();

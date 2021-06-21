@@ -83,30 +83,40 @@ $(function() {
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lacze__do__gnuplota_8hh.html">lacze_do_gnuplota.hh</a>&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;Drone.hh&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;bottom.hh&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define ilosc_dronow_na_scenie  3</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define ilosc_dronow_na_scenie  2</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_scena.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scena.html">Scena</a></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;std::list&lt;std::shared_ptr&lt;obiekt&gt;&gt;lista_elementow;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<a class="code" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html">PzG::LaczeDoGNUPlota</a> Lacze;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;std::list&lt;std::shared_ptr&lt;Drone&gt;&gt; Lista_Dronow; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">int</span> numer_elementu, numer_drona;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<a class="code" href="class_bottom.html">Bottom</a> *podloze; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<a class="code" href="class_scena.html#a8f9fe11b4cfef890123a2acc94672e17">Scena</a>(); </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_scena.html#ad8ac19aa251998d10c0efd06bc07b06b">rysuj</a>(); </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_scena.html#a4db0a048d45a769e451e9c42294a1b81">dodaj_drona</a>(); </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_scena.html#a30a3858be815254e8ef4012c65404959">menu</a>(); </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;std::list&lt;std::shared_ptr&lt;obiekt&gt;&gt;lista_elementow;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<a class="code" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html">PzG::LaczeDoGNUPlota</a> Lacze;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;std::list&lt;std::shared_ptr&lt;Drone&gt;&gt; Lista_Dronow; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">int</span> numer_elementu, numer_drona;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<a class="code" href="class_bottom.html">Bottom</a> *podloze; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<a class="code" href="class_scena.html#a8f9fe11b4cfef890123a2acc94672e17">Scena</a>(); </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_scena.html#ad8ac19aa251998d10c0efd06bc07b06b">rysuj</a>(); </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_scena.html#a4db0a048d45a769e451e9c42294a1b81">dodaj_drona</a>(); </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_scena.html#a30a3858be815254e8ef4012c65404959">menu</a>(); </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclass_scena_html_a4db0a048d45a769e451e9c42294a1b81"><div class="ttname"><a href="class_scena.html#a4db0a048d45a769e451e9c42294a1b81">Scena::dodaj_drona</a></div><div class="ttdeci">void dodaj_drona()</div><div class="ttdoc">rysuje sytuacje</div></div>
-<div class="ttc" id="aclass_scena_html_a30a3858be815254e8ef4012c65404959"><div class="ttname"><a href="class_scena.html#a30a3858be815254e8ef4012c65404959">Scena::menu</a></div><div class="ttdeci">bool menu()</div><div class="ttdoc">rysuje sytuacje</div><div class="ttdef"><b>Definition:</b> scena.cpp:103</div></div>
+<div class="ttc" id="aclass_scena_html_a30a3858be815254e8ef4012c65404959"><div class="ttname"><a href="class_scena.html#a30a3858be815254e8ef4012c65404959">Scena::menu</a></div><div class="ttdeci">bool menu()</div><div class="ttdoc">wyswietla menu i odpowiada za wybor drona</div><div class="ttdef"><b>Definition:</b> scena.cpp:103</div></div>
 <div class="ttc" id="aclass_pz_g_1_1_lacze_do_g_n_u_plota_html"><div class="ttname"><a href="class_pz_g_1_1_lacze_do_g_n_u_plota.html">PzG::LaczeDoGNUPlota</a></div><div class="ttdoc">Klasa realizuje interfejs do programu GNUPlot.</div><div class="ttdef"><b>Definition:</b> lacze_do_gnuplota.hh:331</div></div>
 <div class="ttc" id="alacze__do__gnuplota_8hh_html"><div class="ttname"><a href="lacze__do__gnuplota_8hh.html">lacze_do_gnuplota.hh</a></div></div>
 <div class="ttc" id="aclass_scena_html"><div class="ttname"><a href="class_scena.html">Scena</a></div><div class="ttdoc">klasa Scena odpowiada za umieszczanie obiektów na scenie oraz za obslge uzytkownika</div><div class="ttdef"><b>Definition:</b> scena.hh:18</div></div>
-<div class="ttc" id="aclass_scena_html_ad8ac19aa251998d10c0efd06bc07b06b"><div class="ttname"><a href="class_scena.html#ad8ac19aa251998d10c0efd06bc07b06b">Scena::rysuj</a></div><div class="ttdeci">void rysuj()</div><div class="ttdoc">przygotowuje scene</div><div class="ttdef"><b>Definition:</b> scena.cpp:95</div></div>
+<div class="ttc" id="aclass_scena_html_ad8ac19aa251998d10c0efd06bc07b06b"><div class="ttname"><a href="class_scena.html#ad8ac19aa251998d10c0efd06bc07b06b">Scena::rysuj</a></div><div class="ttdeci">void rysuj()</div><div class="ttdoc">rysuje sytuacje</div><div class="ttdef"><b>Definition:</b> scena.cpp:95</div></div>
 <div class="ttc" id="aclass_bottom_html"><div class="ttname"><a href="class_bottom.html">Bottom</a></div><div class="ttdoc">klasa Bottom to nic innego jak plaszczyzna na ktorej dzialamy</div><div class="ttdef"><b>Definition:</b> bottom.hh:10</div></div>
-<div class="ttc" id="aclass_scena_html_a8f9fe11b4cfef890123a2acc94672e17"><div class="ttname"><a href="class_scena.html#a8f9fe11b4cfef890123a2acc94672e17">Scena::Scena</a></div><div class="ttdeci">Scena()</div><div class="ttdoc">wskaźnik na przygotowaną podloge</div><div class="ttdef"><b>Definition:</b> scena.cpp:8</div></div>
+<div class="ttc" id="aclass_scena_html_a8f9fe11b4cfef890123a2acc94672e17"><div class="ttname"><a href="class_scena.html#a8f9fe11b4cfef890123a2acc94672e17">Scena::Scena</a></div><div class="ttdeci">Scena()</div><div class="ttdoc">przygotowuje scene</div><div class="ttdef"><b>Definition:</b> scena.cpp:8</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

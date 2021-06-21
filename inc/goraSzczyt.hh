@@ -6,6 +6,7 @@ class goraSzczyt : public Solid
 {
 public:
 /*! \brief konstruktor parametryczny*/
+double promien(){return (*wymiary)[2];}
 goraSzczyt(Vector3D srodek=Vector3D(), double a=50, double b=50, double c=50, std::string nazwa_pliku_goraSzczytu = "../datas/goraSzczyt.dat");
 goraSzczyt( goraSzczyt& goraSzczyt );
 goraSzczyt &operator=(const goraSzczyt &drugi)

@@ -37,21 +37,18 @@ void \mbox{\hyperlink{class_drone_a3ba0dbbf550ff6f6b6b7423e33f2f795}{pilot}} (st
 \mbox{\Hypertarget{class_drone_af3eea5315a663549096b4a01f7f34b4c}\label{class_drone_af3eea5315a663549096b4a01f7f34b4c}} 
 int \mbox{\hyperlink{class_drone_af3eea5315a663549096b4a01f7f34b4c}{numer\+\_\+drona}} ()
 \begin{DoxyCompactList}\small\item\em zweaca numer drona \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_drone_ab324c307a4b54e45b46d393c5c704b92}\label{class_drone_ab324c307a4b54e45b46d393c5c704b92}} 
 void \mbox{\hyperlink{class_drone_ab324c307a4b54e45b46d393c5c704b92}{usun}} ()
 \begin{DoxyCompactList}\small\item\em usuwa dane o dronie \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_drone_acbeb4423e956e50ccc906111e53b9117}\label{class_drone_acbeb4423e956e50ccc906111e53b9117}} 
-\mbox{\hyperlink{_vector3_d_8hh_a01090a0f6a3d1e7e9606819bd0fafda0}{Vector3D}} {\bfseries zczytaj\+\_\+srodek\+\_\+obiektu} () const
-\item 
+\mbox{\hyperlink{_vector3_d_8hh_a01090a0f6a3d1e7e9606819bd0fafda0}{Vector3D}} \mbox{\hyperlink{class_drone_acbeb4423e956e50ccc906111e53b9117}{zczytaj\+\_\+srodek\+\_\+obiektu}} () const
+\begin{DoxyCompactList}\small\item\em zczytuje srodek obiektu \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_drone_ad291d839fe7c72590b665be26d16cfbb}\label{class_drone_ad291d839fe7c72590b665be26d16cfbb}} 
-std\+::string {\bfseries zczytaj\+\_\+nazwe\+\_\+obiektu} () const
-\item 
-\mbox{\Hypertarget{class_drone_a227c00e2788000968f26ddf6e2ef1968}\label{class_drone_a227c00e2788000968f26ddf6e2ef1968}} 
-bool {\bfseries kolizja\+\_\+info} (shared\+\_\+ptr$<$ \mbox{\hyperlink{classobiekt}{obiekt}} $>$ object)
-\item 
+std\+::string \mbox{\hyperlink{class_drone_ad291d839fe7c72590b665be26d16cfbb}{zczytaj\+\_\+nazwe\+\_\+obiektu}} () const
+\begin{DoxyCompactList}\small\item\em zczytuje nazwe danego obiektu \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_drone_a227c00e2788000968f26ddf6e2ef1968}{kolizja\+\_\+info}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{classobiekt}{obiekt}} $>$ object)
+\begin{DoxyCompactList}\small\item\em ifnormuje o tym czy zaszla kolizja \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_drone_a7f21ec90c9bb9eb525a85ff3d888dc9e}\label{class_drone_a7f21ec90c9bb9eb525a85ff3d888dc9e}} 
-double {\bfseries promien} ()
-\end{DoxyCompactItemize}
+double \mbox{\hyperlink{class_drone_a7f21ec90c9bb9eb525a85ff3d888dc9e}{promien}} ()
+\begin{DoxyCompactList}\small\item\em zwraca promien obiektu \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -92,6 +89,32 @@ nieobrocony dron we wskazanym punkcie. ~\newline
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_drone_a227c00e2788000968f26ddf6e2ef1968}\label{class_drone_a227c00e2788000968f26ddf6e2ef1968}} 
+\index{Drone@{Drone}!kolizja\_info@{kolizja\_info}}
+\index{kolizja\_info@{kolizja\_info}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{kolizja\_info()}{kolizja\_info()}}
+{\footnotesize\ttfamily bool Drone\+::kolizja\+\_\+info (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classobiekt}{obiekt}} $>$}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+ifnormuje o tym czy zaszla kolizja 
+
+funkcja sprawdzajaca czy zaszla kolizja ~\newline
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em object} & -\/ obiekt sceny \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false . ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classobiekt_a382103d6936873ef96eb0083f7c55d6a}{obiekt}}.
+
 \mbox{\Hypertarget{class_drone_a9f3330dc98c1117e8bf97606206f3715}\label{class_drone_a9f3330dc98c1117e8bf97606206f3715}} 
 \index{Drone@{Drone}!lot\_do\_gory@{lot\_do\_gory}}
 \index{lot\_do\_gory@{lot\_do\_gory}!Drone@{Drone}}
@@ -197,7 +220,17 @@ funkcja odpowiedzialna za przesuwanie drona (lot) po plaszczyznie ~\newline
  \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_drone_acea02e5ab90729749cc15e4bce0c022f}\label{class_drone_acea02e5ab90729749cc15e4bce0c022f}} 
+\mbox{\Hypertarget{class_drone_ab324c307a4b54e45b46d393c5c704b92}\label{class_drone_ab324c307a4b54e45b46d393c5c704b92}} 
+\index{Drone@{Drone}!usun@{usun}}
+\index{usun@{usun}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{usun()}{usun()}}
+{\footnotesize\ttfamily void Drone\+::usun (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+usuwa dane o dronie 
+
+usuwa drona \mbox{\Hypertarget{class_drone_acea02e5ab90729749cc15e4bce0c022f}\label{class_drone_acea02e5ab90729749cc15e4bce0c022f}} 
 \index{Drone@{Drone}!zapisz@{zapisz}}
 \index{zapisz@{zapisz}!Drone@{Drone}}
 \doxysubsubsection{\texorpdfstring{zapisz()}{zapisz()}}
@@ -210,7 +243,21 @@ funkcja odpowiadająca za zapis informacji o wspolrzednych do pliku
 funkcja odpowiadająca za zapis informacji o wspolrzednych do pliku ~\newline
  
 
-Implements \mbox{\hyperlink{classobiekt}{obiekt}}.
+Implements \mbox{\hyperlink{classobiekt_a462cb3e16d6d846bc0f2604be3f7f424}{obiekt}}.
+
+\mbox{\Hypertarget{class_drone_acbeb4423e956e50ccc906111e53b9117}\label{class_drone_acbeb4423e956e50ccc906111e53b9117}} 
+\index{Drone@{Drone}!zczytaj\_srodek\_obiektu@{zczytaj\_srodek\_obiektu}}
+\index{zczytaj\_srodek\_obiektu@{zczytaj\_srodek\_obiektu}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{zczytaj\_srodek\_obiektu()}{zczytaj\_srodek\_obiektu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8hh_a01090a0f6a3d1e7e9606819bd0fafda0}{Vector3D}} Drone\+::zczytaj\+\_\+srodek\+\_\+obiektu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+zczytuje srodek obiektu 
+
+zczytuje nazwe srodka obiektu 
+
+Implements \mbox{\hyperlink{classobiekt_a3de9c7c2bc9f0af78edc7c81b3269fb5}{obiekt}}.
 
 
 

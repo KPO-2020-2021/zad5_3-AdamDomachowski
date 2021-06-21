@@ -12,7 +12,7 @@ class Drone :public obiekt, public std::enable_shared_from_this<Drone>
     PzG::LaczeDoGNUPlota &Lacze;
     int nr_drona; /*! \brief numer drona do identyfikacji obiektu*/
     double kat;   /*! \brief kat obrotu*/
-    double promienR;
+    double promienR=0;
     std::vector<Vector3D> trajektoria; /*! \brief trajektoria lotu drona*/
     Matrix3x3 macierz_obrotu; /*! \brief macierz do oborotu bryly*/
     Vector3D droga; /*! \brief na podstawie drogi obliczany jest wektor przesuniecia*/
@@ -52,12 +52,15 @@ public:
     /*! \brief usuwa dane o dronie*/
     void usun();
 
-
+    /*! \brief zczytuje srodek obiektu*/
     Vector3D zczytaj_srodek_obiektu() const;
 
-    std::string zczytaj_nazwe_obiektu()const{return "";}
+    /*! \brief zczytuje nazwe danego obiektu*/
+    std::string zczytaj_nazwe_obiektu()const{return " Dronem";}
 
+    /*! \brief ifnormuje o tym czy zaszla kolizja*/
     bool kolizja_info(shared_ptr <obiekt> object);
 
+    /*! \brief zwraca promien obiektu*/
     double promien(){return body_copy.promien();}
 };

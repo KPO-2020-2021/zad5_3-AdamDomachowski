@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['typlistapunktow_390',['TypListaPunktow',['../namespace_pz_g.html#a663e923efc195ea10f6f7086c6da490b',1,'PzG']]]
+  ['typlistapunktow_394',['TypListaPunktow',['../namespace_pz_g.html#a663e923efc195ea10f6f7086c6da490b',1,'PzG']]]
 ];

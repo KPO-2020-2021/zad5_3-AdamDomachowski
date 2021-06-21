@@ -31,6 +31,8 @@
         
         body_copy = body_org;
 
+        promienR = body_copy.promien();
+
         body_copy.przesun_o_wektor(wspolrzende);
 
         for(int i=0; i<4; i++)
@@ -47,7 +49,7 @@
     }
 
 
-
+/*! \brief usuwa drona*/
   void Drone::usun()
   {
     Lacze.UsunNazwePliku(body_org.zczytaj_nazwe_obiektu().c_str());
@@ -97,7 +99,6 @@
         wings_copy[i].przesun_o_wektor(body_copy[i * 2]);
     }
 }
-
 
 
 /*!
@@ -187,12 +188,11 @@
             obrot_wiernikow();
             zapisz();
             Lacze.Rysuj();
-            usleep(10000);
+            usleep(1000);
             }
 
             for (std::list<std::shared_ptr<obiekt>>::const_iterator a = lista_elementow.begin(); a != lista_elementow.end(); a++)
             {
-            std::cout <<"*";
             body_copy=body_org; 
             lot_do_gory(-100);
             if (kolizja_info(*a)){
@@ -208,7 +208,7 @@
                 break;
             }
             kolizja=false;
-            droga = 10;
+            droga = 20;
             narysuj_trase(droga);
             }
             for (int i =0; i<100; i++)
@@ -286,7 +286,6 @@
 }//while
 
 
-
 /*!
     \brief funkcja wizualizująca trajektorie lotu                                                                                                       
     \param [in] droga - droga ktora przebedzie dron.     
@@ -319,6 +318,11 @@
 }
 
 
+/*!
+    \brief funkcja sprawdzajaca czy zaszla kolizja                                                                                                     
+    \param [in] object - obiekt sceny
+    \return true or false .     
+*/
 bool Drone::kolizja_info(shared_ptr <obiekt> object)
 {
     std::shared_ptr<Drone> A = shared_from_this();
@@ -338,6 +342,7 @@ bool Drone::kolizja_info(shared_ptr <obiekt> object)
 }
 
 
+/*! \brief zczytuje nazwe srodka obiektu*/
 Vector3D Drone::zczytaj_srodek_obiektu() const
 {
     return body_copy.zczytaj_srodek_obiektu();

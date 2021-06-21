@@ -18,17 +18,17 @@ Vector3D wymiary_podloza(wymiary);
 podloze=new Bottom(wymiary_podloza,20);
 double losowy_srodek[3];
 bool kolizja = false;
-for (int i = 0; i < 2; i++){
+for (int i = 0; i < 4; i++){
     losowy_srodek[0] = rand() % 400 - 200;
     losowy_srodek[1] = rand() % 400 - 200;
     losowy_srodek[2] = 50;
     int nr = rand() % 3;
        if(nr==0)
-  lista_elementow.push_front(std::make_shared<goraSzczyt>(losowy_srodek, 100, 75, 100, "../datas/goraszczyt" + std::to_string(i) + ".dat"));
+  lista_elementow.push_front(std::make_shared<goraSzczyt>(losowy_srodek, 100, 100, 100, "../datas/goraszczyt" + std::to_string(i) + ".dat"));
   else if(i==1)
-  lista_elementow.push_front(std::make_shared<plaskowyz>(losowy_srodek, 100, 30, 100, "../datas/plaskowyz" + std::to_string(i) + ".dat"));
+  lista_elementow.push_front(std::make_shared<plaskowyz>(losowy_srodek, 100, 100, 100, "../datas/plaskowyz" + std::to_string(i) + ".dat"));
   else if(i==2)
-  lista_elementow.push_front(std::make_shared<goraGran>(losowy_srodek, 100, 50, 100, "../datas/goragran" + std::to_string(i) + ".dat"));
+  lista_elementow.push_front(std::make_shared<goraGran>(losowy_srodek, 100, 100, 100, "../datas/goragran" + std::to_string(i) + ".dat"));
   numer_elementu++;
   
   for (std::list<std::shared_ptr<obiekt>>::const_iterator a = lista_elementow.begin(); a != lista_elementow.end(); a++)
@@ -61,7 +61,7 @@ for (int i = 0; i < 2; i++){
 
     for(int i=0;i<ilosc_dronow_na_scenie; i++){
 
-    double pozycja[3]={(double)(rand()%440-220),(double)(rand()%440-220),25};
+    double pozycja[3]={(double)(rand()%440-220),(double)(rand()%440-220),50};
 
     Lista_Dronow.push_front(std::make_shared<Drone>(i, Lacze, Vector3D(pozycja)));
 
@@ -102,7 +102,7 @@ void Scena::rysuj()
 /*! \brief wyswietla menu oraz odpowiada za wybor konkretnego drona */
 bool Scena::menu()
 {
-    std::cout<<"\nWybierz  |  1.pilotaz  |   2. dodaj obiekt  |  3. usun przeszkode  |    |  5. END   |  Twoj wybor: ";
+    std::cout<<"\nWybierz  |  1.pilotaz  |   2. dodaj obiekt  |  3. usun przeszkode  |  5. END   |  Twoj wybor: ";
     int wybor;
     std::cin >> wybor;
     switch (wybor)
@@ -150,17 +150,17 @@ bool Scena::menu()
         bool kolizja = false;
         if (wybor == 1){
 
-            lista_elementow.push_front(std::make_shared<goraSzczyt>(los_srodek, 100, 50, 100, 
+            lista_elementow.push_front(std::make_shared<goraSzczyt>(los_srodek, 100, 100, 100, 
             "../datas/goraszczyt" + std::to_string(numer_elementu) + ".dat"));
         }
 
-        if (wybor == 2){
-            lista_elementow.push_front(std::make_shared<plaskowyz>(los_srodek, 100, 50, 100, 
+        if (wybor == 3){
+            lista_elementow.push_front(std::make_shared<plaskowyz>(los_srodek, 100, 100, 100, 
             "../datas/plaskowyz" + std::to_string(numer_elementu) + ".dat"));
         }
 
-        if (wybor == 3){
-            lista_elementow.push_front(std::make_shared<goraGran>(los_srodek, 100, 50, 100, 
+        if (wybor == 2){
+            lista_elementow.push_front(std::make_shared<goraGran>(los_srodek, 100, 100, 100, 
             "../datas/gran" + std::to_string(numer_elementu) + ".dat"));
         }
 
@@ -194,7 +194,7 @@ bool Scena::menu()
 
                 for (std::list<std::shared_ptr<obiekt>>::const_iterator a = lista_elementow.begin(); a != lista_elementow.end(); a++)
                 {
-                    
+                    std::cout << "*";
                     if((*Lista_Dronow.begin())->kolizja_info(*a))
                     {
                         kolizja = true;

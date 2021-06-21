@@ -80,16 +80,25 @@ $(function() {
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">virtual</span> <span class="keywordtype">bool</span> kolizja_info(shared_ptr &lt;obiekt&gt; <span class="keywordtype">object</span>)=0;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">virtual</span> std::string zczytaj_nazwe_obiektu() <span class="keyword">const</span>=0;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">virtual</span> <span class="keywordtype">void</span> zapisz()=0;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">virtual</span> <a class="code" href="class_vector.html">Vector3D</a> zczytaj_srodek_obiektu() <span class="keyword">const</span>=0;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">virtual</span> <span class="keywordtype">double</span> promien()=0;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classobiekt.html#a382103d6936873ef96eb0083f7c55d6a">kolizja_info</a>(shared_ptr &lt;obiekt&gt; <span class="keywordtype">object</span>)=0;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">virtual</span> std::string <a class="code" href="classobiekt.html#a84ab9119d21405305c6859269ba18729">zczytaj_nazwe_obiektu</a>() <span class="keyword">const</span>=0;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classobiekt.html#a462cb3e16d6d846bc0f2604be3f7f424">zapisz</a>()=0;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">virtual</span> <a class="code" href="class_vector.html">Vector3D</a> <a class="code" href="classobiekt.html#a3de9c7c2bc9f0af78edc7c81b3269fb5">zczytaj_srodek_obiektu</a>() <span class="keyword">const</span>=0;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classobiekt.html#afe396cca6455b8ba93c50b95a4640d86">promien</a>()=0;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassobiekt_html_a3de9c7c2bc9f0af78edc7c81b3269fb5"><div class="ttname"><a href="classobiekt.html#a3de9c7c2bc9f0af78edc7c81b3269fb5">obiekt::zczytaj_srodek_obiektu</a></div><div class="ttdeci">virtual Vector3D zczytaj_srodek_obiektu() const =0</div><div class="ttdoc">zczytuje wspolrzedne srodka obiektu</div></div>
 <div class="ttc" id="aclassobiekt_html"><div class="ttname"><a href="classobiekt.html">obiekt</a></div><div class="ttdef"><b>Definition:</b> obiekt.hh:7</div></div>
+<div class="ttc" id="aclassobiekt_html_afe396cca6455b8ba93c50b95a4640d86"><div class="ttname"><a href="classobiekt.html#afe396cca6455b8ba93c50b95a4640d86">obiekt::promien</a></div><div class="ttdeci">virtual double promien()=0</div><div class="ttdoc">zwraca promien obiektu</div></div>
+<div class="ttc" id="aclassobiekt_html_a382103d6936873ef96eb0083f7c55d6a"><div class="ttname"><a href="classobiekt.html#a382103d6936873ef96eb0083f7c55d6a">obiekt::kolizja_info</a></div><div class="ttdeci">virtual bool kolizja_info(shared_ptr&lt; obiekt &gt; object)=0</div><div class="ttdoc">zwraca promien obiektu</div></div>
+<div class="ttc" id="aclassobiekt_html_a462cb3e16d6d846bc0f2604be3f7f424"><div class="ttname"><a href="classobiekt.html#a462cb3e16d6d846bc0f2604be3f7f424">obiekt::zapisz</a></div><div class="ttdeci">virtual void zapisz()=0</div><div class="ttdoc">zapisuje obiekt</div></div>
 <div class="ttc" id="aclass_vector_html"><div class="ttname"><a href="class_vector.html">Vector&lt; 3 &gt;</a></div></div>
+<div class="ttc" id="aclassobiekt_html_a84ab9119d21405305c6859269ba18729"><div class="ttname"><a href="classobiekt.html#a84ab9119d21405305c6859269ba18729">obiekt::zczytaj_nazwe_obiektu</a></div><div class="ttdeci">virtual std::string zczytaj_nazwe_obiektu() const =0</div><div class="ttdoc">zczytuje nazwe obiektu</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

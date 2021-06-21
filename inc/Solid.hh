@@ -24,27 +24,39 @@ std::string nazwa_pliku_bryly;  /*! \brief przechowuje nazwe pliku do którego z
 
 public:
 
+/*! \brief operator indeksujacy*/
 Vector3D &operator[](int index);
 
+/*! \brief operator indeksujacy*/
 Vector3D operator[](int index) const;
 
-void wstaw_srodek(Vector3D srodek_bryly); /*! \brief ustawia wierzcholki srodka bryly*/
+/*! \brief ustawia wierzcholki srodka bryly*/
+void wstaw_srodek(Vector3D srodek_bryly); 
 
-void ustaw_nazwe_pliku(std::string nazwa_pliku_bryly); /*! \brief umozwliwia podania nazwy pliku do ktorego zapisywane beda wierzcholki*/
+/*! \brief umozwliwia podania nazwy pliku do ktorego zapisywane beda wierzcholki*/
+void ustaw_nazwe_pliku(std::string nazwa_pliku_bryly); 
 
-Vector3D zczytaj_srodek_obiektu() const; /*! \brief zczytuje wierzcholki srodka bryly*/
+/*! \brief zczytuje wierzcholki srodka bryly*/
+Vector3D zczytaj_srodek_obiektu() const; 
 
-std::string zczytaj_nazwe_obiektu() const; /*! \brief zczytuje nazwe pliku do ktorego zapisywane beda wierzcholki*/
+/*! \brief zczytuje nazwe pliku do ktorego zapisywane beda wierzcholki*/
+std::string zczytaj_nazwe_obiektu() const; 
 
-void przesun_o_wektor(Vector3D wektor_przesuniecia); /*! \brief przesuwa bryle o zadany wektor*/
+/*! \brief przesuwa bryle o zadany wektor*/
+void przesun_o_wektor(Vector3D wektor_przesuniecia); 
 
-void obrot(Matrix3x3 macierz_obrotu); /*! \brief obraca bryle o zadany kat*/
+/*! \brief obraca bryle o zadany kat*/
+void obrot(Matrix3x3 macierz_obrotu); 
 
-void zapisz(); /*! \brief zapisuje wspolrzedne bryly do pliku*/
+/*! \brief zapisuje wspolrzedne bryly do pliku*/
+void zapisz(); 
 
+/*! \brief zwraca wartosc danego wierzcholka*/
 Vector3D czytaj_wierzcholki(int ver) const;
 
+/*! \brief ifnormuje o tym czy zaszla kolizja*/
 bool kolizja_info(shared_ptr <obiekt> object);
 
+/*! \brief zwraca promien obiektu*/
 double promien(){return sqrt(pow(srodek_bryly[0]-wierzcholki[0][0],2) + pow(srodek_bryly[1]-wierzcholki[0][1],2)+pow(srodek_bryly[2]-wierzcholki[0][2],2));}
 };
